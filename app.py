@@ -5,6 +5,8 @@ import random
 import json
 from tensorflow.keras.models import load_model
 from nltk.stem import WordNetLemmatizer
+import tensorflow as tf
+
 
 app = Flask(__name__)
 app = Flask(__name__, template_folder='src')
