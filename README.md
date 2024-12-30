@@ -24,14 +24,6 @@ A machine learning-based healthcare chatbot designed to interact with users and 
 └── README.md               # Project documentation
 ```
 
-## Clone This Project
-```
-git clone https://github.com/iamraghavan/healthcare-chatbot.git
-```
-```
-cd healthcare-chatbot
-```
-
 ## Requirements
 
 - Python 3.11+
@@ -53,7 +45,7 @@ Follow these steps to set up the project:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/healthcare-chatbot.git
+   git clone https://github.com/iamraghavan/healthcare-chatbot.git
    cd healthcare-chatbot
    ```
 
