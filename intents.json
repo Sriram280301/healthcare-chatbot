@@ -1,0 +1,19 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": ["Hi", "Hello", "How are you?", "Is anyone there?"],
+            "responses": ["Hello!", "Hi there!", "How can I assist you today?"]
+        },
+        {
+            "tag": "symptoms",
+            "patterns": ["I have a headache", "I feel sick", "I'm coughing"],
+            "responses": ["It sounds like you might have a common illness. Please rest and stay hydrated."]
+        },
+        {
+            "tag": "emergency",
+            "patterns": ["I have chest pain", "I'm having trouble breathing"],
+            "responses": ["This could be serious. Please call emergency services or visit the nearest hospital immediately."]
+        }
+    ]
+}

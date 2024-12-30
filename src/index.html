@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthcare Chatbot</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div id="chatbox">
+        <div id="messages"></div>
+        <input type="text" id="userInput" placeholder="Type a message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <script>
+        async function sendMessage() {
+            const userInput = document.getElementById('userInput').value;
+            const response = await fetch('/get', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: userInput })
+            });
+            const data = await response.json();
+            document.getElementById('messages').innerHTML += `<div>User: ${userInput}</div>`;
+            document.getElementById('messages').innerHTML += `<div>Bot: ${data.response}</div>`;
+            document.getElementById('userInput').value = '';
+        }
+    </script>
+</body>
+</html>
