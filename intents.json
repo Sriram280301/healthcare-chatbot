@@ -1,19 +1,39 @@
 {
     "intents": [
         {
-            "tag": "greeting",
-            "patterns": ["Hi", "Hello", "How are you?", "Is anyone there?"],
-            "responses": ["Hello!", "Hi there!", "How can I assist you today?"]
+            "tag": "stop_smoking",
+            "patterns": ["How do I stop smoking?", "I want to quit smoking.", "What is the best way to stop smoking?"],
+            "responses": [
+                "Stopping smoking requires willpower and being steadfast. You can stop safely by using bupropion or a nicotine patch under a doctor’s guidance.",
+                "Consult an addiction clinic near you for additional support. Wishing you the best in your journey to quit smoking!",
+                "It's great that you want to stop smoking! Talk to a healthcare provider for advice on nicotine replacement therapies or medications like bupropion."
+            ]
         },
         {
-            "tag": "symptoms",
-            "patterns": ["I have a headache", "I feel sick", "I'm coughing"],
-            "responses": ["It sounds like you might have a common illness. Please rest and stay hydrated."]
+            "tag": "missed_period",
+            "patterns": [
+                "My period stopped for three months, what could be wrong?",
+                "I haven’t had a period in months but I’m not pregnant.",
+                "Why has my period stopped suddenly?"
+            ],
+            "responses": [
+                "It’s essential to consult your doctor for hormonal tests like thyroid or prolactin levels to assess the cause of your missed periods.",
+                "A tubal ligation makes pregnancy unlikely, but a thorough evaluation by a doctor is recommended.",
+                "Endometriosis is an unlikely cause for completely stopping your cycle. Please visit your doctor for an examination."
+            ]
         },
         {
-            "tag": "emergency",
-            "patterns": ["I have chest pain", "I'm having trouble breathing"],
-            "responses": ["This could be serious. Please call emergency services or visit the nearest hospital immediately."]
+            "tag": "breast_tenderness",
+            "patterns": [
+                "Can caffeine cause breast tenderness?",
+                "Why do I have pain in one breast after drinking coffee?",
+                "Does caffeine lead to chest discomfort?"
+            ],
+            "responses": [
+                "Excess caffeine can cause gastric discomfort, which may result in breast or chest pain. Consult your doctor for a local evaluation.",
+                "Mild unilateral breast tenderness might be linked to your caffeine intake. Stay in touch with your healthcare provider for further guidance.",
+                "While caffeine can cause discomfort, other conditions like mastitis should also be ruled out by a healthcare professional."
+            ]
         }
     ]
 }

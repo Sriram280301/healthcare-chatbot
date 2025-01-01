@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import numpy as np
+import tensorflow as tf
 import pickle
 import random
 import json
@@ -9,12 +10,15 @@ from nltk.stem import WordNetLemmatizer
 app = Flask(__name__)
 app = Flask(__name__, template_folder='src')
 
-
 # Load model and data
 model = load_model('model/chatbot_model.h5')
 lemmatizer = WordNetLemmatizer()
 words = pickle.load(open('model/words.pkl', 'rb'))
 classes = pickle.load(open('model/classes.pkl', 'rb'))
+
+# Load intents data
+with open('intents.json') as json_file:
+    data = json.load(json_file)
 
 # Utility functions
 def clean_up_sentence(sentence):
