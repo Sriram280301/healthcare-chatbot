@@ -34,6 +34,32 @@
                 "Mild unilateral breast tenderness might be linked to your caffeine intake. Stay in touch with your healthcare provider for further guidance.",
                 "While caffeine can cause discomfort, other conditions like mastitis should also be ruled out by a healthcare professional."
             ]
+        },
+        {
+            "tag": "farewell",
+            "patterns": ["Goodbye", "Bye", "See you later", "Thank you"],
+            "responses": ["Goodbye! Take care.", "Bye! Feel free to ask if you have more questions.", "Thank you! Have a great day!"]
+        },
+        {
+            "tag": "greeting",
+            "patterns": ["Hello", "Hi", "How are you?"],
+            "responses": ["Hello! How can I help you today?", "Hi! How can I assist you?"]
+          },
+        
+          {
+            "tag": "blood_bank_search",
+            "patterns": [
+                "Find blood banks in {city}",
+                "Where is a blood bank in {district}?",
+                "Are there any blood banks near {address}?",
+                "Show me blood banks in {state}",
+                "Blood banks in {city}?",
+                "List blood banks in {state}"
+            ],
+            "responses": [
+                "Searching blood banks in your location.",
+                "Here are the results for your search query."
+            ]
         }
     ]
 }
