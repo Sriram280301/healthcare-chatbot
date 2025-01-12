@@ -49,55 +49,26 @@ def get_response(tag):
 
 def search_blood_bank(query):
     """
-    Search the blood bank data for entries matching the specified city, district, or state.
-    :param query: The location to search for (city, district, or state).
+    Search the blood bank data for entries matching the specified city or district.
+    :param query: The location to search for (city or district).
     :return: A list of matching blood bank data.
     """
     query = query.lower().strip()
-    exact_matches = []
-    partial_matches = []
+    matches = []
 
     for bank in blood_bank_data:
-        # Normalize the fields for comparison
-        city = bank.get('City', '').lower()
-        district = bank.get('District', '').lower()
-        state = bank.get('State', '').lower()
+        city = bank.get('DISTRICT', '').lower()
+        hospital_name = bank.get('HospitalName', '').lower()
 
-        # Prioritize exact matches for City or District
-        if query == city or query == district:
-            exact_matches.append({
-                "Blood Bank Name": bank.get("Blood Bank Name", "N/A"),
-                "City": bank.get("City", "N/A"),
-                "State": bank.get("State", "N/A"),
-                "District": bank.get("District", "N/A"),
-                "Address": bank.get("Address", "N/A"),
-                "Contact No": bank.get("Contact No", "N/A"),
-                "Service Time": bank.get("Service Time", "N/A"),
-                "Helpline": bank.get("Helpline", "N/A")
-            })
-        # Add partial matches for fallback
-        elif query in city or query in district or query in state:
-            partial_matches.append({
-                "Blood Bank Name": bank.get("Blood Bank Name", "N/A"),
-                "City": bank.get("City", "N/A"),
-                "State": bank.get("State", "N/A"),
-                "District": bank.get("District", "N/A"),
-                "Address": bank.get("Address", "N/A"),
-                "Contact No": bank.get("Contact No", "N/A"),
-                "Service Time": bank.get("Service Time", "N/A"),
-                "Helpline": bank.get("Helpline", "N/A")
+        if query in city or query in hospital_name:
+            matches.append({
+                "Hospital Name": bank.get("HospitalName", "N/A"),
+                "District": bank.get("DISTRICT", "N/A"),
+                "Address": bank.get("ADDRESS", "N/A"),
+                "Contact No": bank.get("HOSPITAL CONTACT NO", "N/A")
             })
 
-    # Return exact matches first, then partial matches
-    if exact_matches:
-        return exact_matches
-    elif partial_matches:
-        return partial_matches
-    else:
-        return []
-
-
-
+    return matches
 
 @app.route('/get', methods=['POST'])
 def handle_request():
@@ -124,7 +95,7 @@ def handle_request():
         if results:
             return jsonify({"type": "blood_bank", "results": results})
         else:
-            return jsonify({"type": "blood_bank", "error": f"No blood banks found in '{location_keywords}'."}), 404
+            return jsonify({"type": "blood_bank", "error": f"No blood banks found for '{location_keywords}'."}), 404
     else:
         # Handle other chatbot intents
         response = get_response(intent)

@@ -1,0 +1,15 @@
+{
+            "tag": "blood_bank_search",
+            "patterns": [
+                "Find blood banks in {city}",
+                "Where is a blood bank in {district}?",
+                "Are there any blood banks near {address}?",
+                "Show me blood banks in {state}",
+                "Blood banks in {city}?",
+                "List blood banks in {state}"
+            ],
+            "responses": [
+                "Searching blood banks in your location.",
+                "Here are the results for your search query."
+            ]
+        }

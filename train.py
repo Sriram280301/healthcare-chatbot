@@ -10,18 +10,25 @@ from tensorflow.keras.optimizers import SGD
 from nltk.stem import WordNetLemmatizer
 from sklearn.preprocessing import LabelEncoder
 
+
 # Ensure required directories exist
 MODEL_DIR = 'model'
 os.makedirs(MODEL_DIR, exist_ok=True)
 
 # Load intents JSON
 INTENTS_FILE = 'intents.json'
+BLOOD_BANK_FILE = 'blood_bank.json'
 
 if not os.path.exists(INTENTS_FILE):
     raise FileNotFoundError(f"{INTENTS_FILE} not found.")
+if not os.path.exists(BLOOD_BANK_FILE):
+    raise FileNotFoundError(f"{BLOOD_BANK_FILE} not found.")
 
 with open(INTENTS_FILE, 'r') as file:
     intents = json.load(file)
+
+with open(BLOOD_BANK_FILE, 'r') as file:
+    blood_bank_data = json.load(file)
 
 lemmatizer = WordNetLemmatizer()
 label_encoder = LabelEncoder()
@@ -41,13 +48,23 @@ for intent in intents['intents']:
         if intent['tag'] not in classes:
             classes.append(intent['tag'])
 
-# Adding the blood bank search patterns
-for pattern in ["Blood bank in {city}", "Blood bank in {state}", "Where is blood bank in {city}?"]:
-    tokens = tf.keras.preprocessing.text.text_to_word_sequence(pattern)
-    words.extend(tokens)
-    documents.append((tokens, 'blood_bank_search'))
-    if 'blood_bank_search' not in classes:
-        classes.append('blood_bank_search')
+# Add blood bank data patterns
+blood_bank_tag = 'blood_bank_search'
+for bank in blood_bank_data:
+    city = bank.get("DISTRICT", "").strip()
+    hospital_name = bank.get("HospitalName", "").strip()
+    patterns = [
+        f"Where is a blood bank in {city}?",
+        f"Find a blood bank in {city}",
+        f"Blood bank near {city}",
+        f"Tell me about {hospital_name} in {city}"
+    ]
+    for pattern in patterns:
+        tokens = tf.keras.preprocessing.text.text_to_word_sequence(pattern)
+        words.extend(tokens)
+        documents.append((tokens, blood_bank_tag))
+        if blood_bank_tag not in classes:
+            classes.append(blood_bank_tag)
 
 # Lemmatize and sort unique words
 words = sorted(set([lemmatizer.lemmatize(w.lower()) for w in words if w not in ignore_words]))

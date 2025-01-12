@@ -41,25 +41,47 @@
             "responses": ["Goodbye! Take care.", "Bye! Feel free to ask if you have more questions.", "Thank you! Have a great day!"]
         },
         {
+            "tag": "blood_cancer",
+            "patterns": [
+                "What are the symptoms of blood cancer?",
+                "How is blood cancer diagnosed?",
+                "Can leukemia be treated?",
+                "What causes blood cancer?",
+                "Is blood cancer hereditary?"
+            ],
+            "responses": [
+                "Blood cancer symptoms can include fatigue, fever, weight loss, and easy bruising. Consult a hematologist for an accurate diagnosis.",
+                "Blood cancer is diagnosed using blood tests, bone marrow tests, and imaging studies like CT scans. Talk to your doctor for guidance.",
+                "Treatment for blood cancer depends on the type and stage. It may involve chemotherapy, radiation, or a bone marrow transplant. Seek medical advice for more details.",
+                "The exact cause of blood cancer isn't fully understood, but genetic factors and exposure to certain chemicals or radiation may play a role.",
+                "Some types of blood cancer can have hereditary components, but other factors like lifestyle and environment also contribute."
+            ]
+        },
+        {
+            "tag": "brain_tumor",
+            "patterns": [
+                "What are the signs of a brain tumor?",
+                "How is a brain tumor treated?",
+                "Can headaches indicate a brain tumor?",
+                "What causes brain tumors?",
+                "Is surgery always required for brain tumors?"
+            ],
+            "responses": [
+                "Brain tumor symptoms can include persistent headaches, nausea, vision changes, and difficulty speaking or walking. Consult a neurologist for an evaluation.",
+                "Treatment for brain tumors depends on the type, size, and location. Options include surgery, radiation therapy, and chemotherapy. Seek medical advice for tailored recommendations.",
+                "Frequent headaches can be a symptom of a brain tumor, but many other conditions cause headaches. It's best to consult a healthcare provider for clarification.",
+                "The causes of brain tumors can vary. Some may be linked to genetic factors or radiation exposure, but the exact causes aren't always clear.",
+                "Surgery is not always required for brain tumors. Some may be treated with medications, radiation, or other therapies. Consult a specialist to discuss your options."
+            ]
+        },
+        
+
+        {
             "tag": "greeting",
             "patterns": ["Hello", "Hi", "How are you?"],
             "responses": ["Hello! How can I help you today?", "Hi! How can I assist you?"]
-          },
+          }
         
-          {
-            "tag": "blood_bank_search",
-            "patterns": [
-                "Find blood banks in {city}",
-                "Where is a blood bank in {district}?",
-                "Are there any blood banks near {address}?",
-                "Show me blood banks in {state}",
-                "Blood banks in {city}?",
-                "List blood banks in {state}"
-            ],
-            "responses": [
-                "Searching blood banks in your location.",
-                "Here are the results for your search query."
-            ]
-        }
+          
     ]
 }
