@@ -80,7 +80,79 @@
             "tag": "greeting",
             "patterns": ["Hello", "Hi", "How are you?"],
             "responses": ["Hello! How can I help you today?", "Hi! How can I assist you?"]
-          }
+          },
+
+          {
+            "tag": "fever",
+            "patterns": [
+                "What are the symptoms of a fever?",
+                "How can I treat a fever at home?",
+                "What causes a fever?",
+                "When should I see a doctor for a fever?",
+                "Can a fever indicate something serious?"
+            ],
+            "responses": [
+                "Fever symptoms include an elevated body temperature, sweating, chills, headache, and muscle aches. Monitor your temperature and rest.",
+                "To treat a fever at home, stay hydrated, rest, and take over-the-counter medications like acetaminophen or ibuprofen if necessary. Consult a doctor if symptoms persist.",
+                "A fever is often caused by infections like the flu, colds, or other viral or bacterial conditions. It's the body's way of fighting illness.",
+                "You should see a doctor for a fever if it lasts more than three days, exceeds 103°F (39.4°C), or is accompanied by severe symptoms like confusion or difficulty breathing.",
+                "A fever can indicate a serious condition such as a severe infection or inflammatory disease. Consult a doctor if you're concerned about the cause."
+            ]
+        },
+        {
+            "tag": "cold",
+            "patterns": [
+                "What are the symptoms of a common cold?",
+                "How can I treat a cold at home?",
+                "Can a cold turn into something serious?",
+                "What causes the common cold?",
+                "How long does a cold last?"
+            ],
+            "responses": [
+                "Symptoms of a common cold include a runny or stuffy nose, sore throat, cough, sneezing, mild fever, and body aches. Rest and hydration can help.",
+                "To treat a cold at home, drink plenty of fluids, rest, and use over-the-counter remedies for symptoms like a sore throat or congestion.",
+                "A cold is usually mild, but in some cases, it can lead to complications like sinus infections or bronchitis, especially in individuals with weakened immune systems.",
+                "The common cold is caused by viruses, most commonly rhinoviruses. It spreads through droplets from coughs, sneezes, or close contact with infected individuals.",
+                "A cold typically lasts 7-10 days, although symptoms may improve sooner with proper care and rest."
+            ]
+        },
+        {
+            "tag": "headache",
+            "patterns": [
+                "What causes headaches?",
+                "How can I relieve a headache?",
+                "Can stress lead to headaches?",
+                "When should I worry about a headache?",
+                "Are headaches a sign of something serious?"
+            ],
+            "responses": [
+                "Headaches can be caused by stress, dehydration, lack of sleep, eye strain, or underlying health conditions. Identifying triggers can help manage them.",
+                "To relieve a headache, rest in a quiet, dark room, stay hydrated, and take over-the-counter pain relievers if needed. Relaxation techniques can also help.",
+                "Yes, stress is a common cause of tension headaches. Practicing stress management and relaxation exercises can help prevent them.",
+                "You should seek medical attention for a headache if it is sudden and severe, persistent, or accompanied by symptoms like confusion, vision changes, or fever.",
+                "While most headaches are harmless, they can sometimes indicate serious conditions like migraines, infections, or neurological issues. Consult a doctor if you're unsure."
+            ]
+        },
+        {
+            "tag": "ulcer",
+            "patterns": [
+                "What are the symptoms of an ulcer?",
+                "How is an ulcer treated?",
+                "What causes stomach ulcers?",
+                "Can stress cause ulcers?",
+                "Is an ulcer serious?"
+            ],
+            "responses": [
+                "Symptoms of an ulcer include burning stomach pain, bloating, nausea, and, in severe cases, vomiting blood or black stools. Seek medical advice if you notice these symptoms.",
+                "Ulcers are typically treated with medications like antacids, proton pump inhibitors, or antibiotics for H. pylori infections. Lifestyle changes can also help.",
+                "Stomach ulcers are often caused by H. pylori bacteria or long-term use of NSAIDs like ibuprofen. Smoking and excessive alcohol use can also contribute.",
+                "Stress alone is not a direct cause of ulcers but can exacerbate symptoms or contribute to other factors like acid reflux.",
+                "Most ulcers can be treated effectively, but if left untreated, they can lead to complications like bleeding or perforation. Consult a doctor for proper care."
+            ]
+        },
+
+        
+        
         
           
     ]
