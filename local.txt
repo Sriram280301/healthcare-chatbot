@@ -12,4 +12,18 @@
                 "Searching blood banks in your location.",
                 "Here are the results for your search query."
             ]
+
+            "tag": "hospital_search",
+    "patterns": [
+        "Find hospitals in {city}",
+        "Where is a hospital in {district}?",
+        "Are there any hospitals near {address}?",
+        "Show me hospitals in {state}",
+        "Hospitals in {city}?",
+        "List hospitals in {state}"
+    ],
+    "responses": [
+        "Searching hospitals in your location.",
+        "Here are the results for your search query."
+    ]
         }

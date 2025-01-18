@@ -1,0 +1,2270 @@
+{
+  "intents": [
+    {
+      "tag": "stop_smoking",
+      "patterns": [
+        "How do I stop smoking?",
+        "I want to quit smoking.",
+        "What is the best way to stop smoking?"
+      ],
+      "responses": [
+        "Stopping smoking requires willpower and being steadfast. You can stop safely by using bupropion or a nicotine patch under a doctor’s guidance.",
+        "Consult an addiction clinic near you for additional support. Wishing you the best in your journey to quit smoking!",
+        "It's great that you want to stop smoking! Talk to a healthcare provider for advice on nicotine replacement therapies or medications like bupropion."
+      ]
+    },
+    {
+      "tag": "missed_period",
+      "patterns": [
+        "My period stopped for three months, what could be wrong?",
+        "I haven’t had a period in months but I’m not pregnant.",
+        "Why has my period stopped suddenly?"
+      ],
+      "responses": [
+        "It’s essential to consult your doctor for hormonal tests like thyroid or prolactin levels to assess the cause of your missed periods.",
+        "A tubal ligation makes pregnancy unlikely, but a thorough evaluation by a doctor is recommended.",
+        "Endometriosis is an unlikely cause for completely stopping your cycle. Please visit your doctor for an examination."
+      ]
+    },
+    {
+      "tag": "breast_tenderness",
+      "patterns": [
+        "Can caffeine cause breast tenderness?",
+        "Why do I have pain in one breast after drinking coffee?",
+        "Does caffeine lead to chest discomfort?"
+      ],
+      "responses": [
+        "Excess caffeine can cause gastric discomfort, which may result in breast or chest pain. Consult your doctor for a local evaluation.",
+        "Mild unilateral breast tenderness might be linked to your caffeine intake. Stay in touch with your healthcare provider for further guidance.",
+        "While caffeine can cause discomfort, other conditions like mastitis should also be ruled out by a healthcare professional."
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": ["Goodbye", "Bye", "See you later", "Thank you"],
+      "responses": [
+        "Goodbye! Take care.",
+        "Bye! Feel free to ask if you have more questions.",
+        "Thank you! Have a great day!"
+      ]
+    },
+    {
+      "tag": "blood_cancer",
+      "patterns": [
+        "What are the symptoms of blood cancer?",
+        "How is blood cancer diagnosed?",
+        "Can leukemia be treated?",
+        "What causes blood cancer?",
+        "Is blood cancer hereditary?"
+      ],
+      "responses": [
+        "Blood cancer symptoms can include fatigue, fever, weight loss, and easy bruising. Consult a hematologist for an accurate diagnosis.",
+        "Blood cancer is diagnosed using blood tests, bone marrow tests, and imaging studies like CT scans. Talk to your doctor for guidance.",
+        "Treatment for blood cancer depends on the type and stage. It may involve chemotherapy, radiation, or a bone marrow transplant. Seek medical advice for more details.",
+        "The exact cause of blood cancer isn't fully understood, but genetic factors and exposure to certain chemicals or radiation may play a role.",
+        "Some types of blood cancer can have hereditary components, but other factors like lifestyle and environment also contribute."
+      ]
+    },
+    {
+      "tag": "brain_tumor",
+      "patterns": [
+        "What are the signs of a brain tumor?",
+        "How is a brain tumor treated?",
+        "Can headaches indicate a brain tumor?",
+        "What causes brain tumors?",
+        "Is surgery always required for brain tumors?"
+      ],
+      "responses": [
+        "Brain tumor symptoms can include persistent headaches, nausea, vision changes, and difficulty speaking or walking. Consult a neurologist for an evaluation.",
+        "Treatment for brain tumors depends on the type, size, and location. Options include surgery, radiation therapy, and chemotherapy. Seek medical advice for tailored recommendations.",
+        "Frequent headaches can be a symptom of a brain tumor, but many other conditions cause headaches. It's best to consult a healthcare provider for clarification.",
+        "The causes of brain tumors can vary. Some may be linked to genetic factors or radiation exposure, but the exact causes aren't always clear.",
+        "Surgery is not always required for brain tumors. Some may be treated with medications, radiation, or other therapies. Consult a specialist to discuss your options."
+      ]
+    },
+    {
+      "tag": "fever",
+      "patterns": [
+        "What are the symptoms of a fever?",
+        "How can I treat a fever at home?",
+        "What causes a fever?",
+        "When should I see a doctor for a fever?",
+        "Can a fever indicate something serious?"
+      ],
+      "responses": [
+        "Fever symptoms include an elevated body temperature, sweating, chills, headache, and muscle aches. Monitor your temperature and rest.",
+        "To treat a fever at home, stay hydrated, rest, and take over-the-counter medications like acetaminophen or ibuprofen if necessary. Consult a doctor if symptoms persist.",
+        "A fever is often caused by infections like the flu, colds, or other viral or bacterial conditions. It's the body's way of fighting illness.",
+        "You should see a doctor for a fever if it lasts more than three days, exceeds 103°F (39.4°C), or is accompanied by severe symptoms like confusion or difficulty breathing.",
+        "A fever can indicate a serious condition such as a severe infection or inflammatory disease. Consult a doctor if you're concerned about the cause."
+      ]
+    },
+    {
+      "tag": "cold",
+      "patterns": [
+        "What are the symptoms of a common cold?",
+        "How can I treat a cold at home?",
+        "Can a cold turn into something serious?",
+        "What causes the common cold?",
+        "How long does a cold last?"
+      ],
+      "responses": [
+        "Symptoms of a common cold include a runny or stuffy nose, sore throat, cough, sneezing, mild fever, and body aches. Rest and hydration can help.",
+        "To treat a cold at home, drink plenty of fluids, rest, and use over-the-counter remedies for symptoms like a sore throat or congestion.",
+        "A cold is usually mild, but in some cases, it can lead to complications like sinus infections or bronchitis, especially in individuals with weakened immune systems.",
+        "The common cold is caused by viruses, most commonly rhinoviruses. It spreads through droplets from coughs, sneezes, or close contact with infected individuals.",
+        "A cold typically lasts 7-10 days, although symptoms may improve sooner with proper care and rest."
+      ]
+    },
+    {
+      "tag": "headache",
+      "patterns": [
+        "What causes headaches?",
+        "How can I relieve a headache?",
+        "Can stress lead to headaches?",
+        "When should I worry about a headache?",
+        "Are headaches a sign of something serious?"
+      ],
+      "responses": [
+        "Headaches can be caused by stress, dehydration, lack of sleep, eye strain, or underlying health conditions. Identifying triggers can help manage them.",
+        "To relieve a headache, rest in a quiet, dark room, stay hydrated, and take over-the-counter pain relievers if needed. Relaxation techniques can also help.",
+        "Yes, stress is a common cause of tension headaches. Practicing stress management and relaxation exercises can help prevent them.",
+        "You should seek medical attention for a headache if it is sudden and severe, persistent, or accompanied by symptoms like confusion, vision changes, or fever.",
+        "While most headaches are harmless, they can sometimes indicate serious conditions like migraines, infections, or neurological issues. Consult a doctor if you're unsure."
+      ]
+    },
+    {
+      "tag": "ulcer",
+      "patterns": [
+        "What are the symptoms of an ulcer?",
+        "How is an ulcer treated?",
+        "What causes stomach ulcers?",
+        "Can stress cause ulcers?",
+        "Is an ulcer serious?"
+      ],
+      "responses": [
+        "Symptoms of an ulcer include burning stomach pain, bloating, nausea, and, in severe cases, vomiting blood or black stools. Seek medical advice if you notice these symptoms.",
+        "Ulcers are typically treated with medications like antacids, proton pump inhibitors, or antibiotics for H. pylori infections. Lifestyle changes can also help.",
+        "Stomach ulcers are often caused by H. pylori bacteria or long-term use of NSAIDs like ibuprofen. Smoking and excessive alcohol use can also contribute.",
+        "Stress alone is not a direct cause of ulcers but can exacerbate symptoms or contribute to other factors like acid reflux.",
+        "Most ulcers can be treated effectively, but if left untreated, they can lead to complications like bleeding or perforation. Consult a doctor for proper care."
+      ]
+    },
+    {
+      "tag": "abdominal_aortic_aneurysm",
+      "patterns": [
+        "What is an abdominal aortic aneurysm?",
+        "What are the symptoms of an abdominal aortic aneurysm?",
+        "How is an abdominal aortic aneurysm treated?",
+        "What causes abdominal aortic aneurysms?",
+        "Is an abdominal aortic aneurysm life-threatening?"
+      ],
+      "responses": [
+        "An abdominal aortic aneurysm (AAA) is a bulge in the aorta, the main blood vessel that runs through the abdomen.",
+        "Symptoms of an abdominal aortic aneurysm can include a pulsating feeling in the abdomen, deep pain, or back pain. Many aneurysms have no symptoms and are found during tests for other conditions.",
+        "Treatment may involve monitoring, lifestyle changes, or surgery depending on the size and risk of rupture. Consult a vascular specialist for options.",
+        "Factors like smoking, high blood pressure, and genetic predisposition can increase the risk of developing an abdominal aortic aneurysm.",
+        "Yes, an untreated AAA can rupture, leading to life-threatening internal bleeding. Immediate medical attention is critical if a rupture occurs."
+      ]
+    },
+    {
+      "tag": "achilles_tendinopathy",
+      "patterns": [
+        "What causes Achilles tendinopathy?",
+        "What are the symptoms of Achilles tendinopathy?",
+        "How do you treat Achilles tendinopathy?",
+        "Is Achilles tendinopathy common in athletes?",
+        "Can Achilles tendinopathy heal on its own?"
+      ],
+      "responses": [
+        "Achilles tendinopathy is caused by overuse, strain, or repetitive stress on the Achilles tendon. It’s common in runners and athletes.",
+        "Symptoms include pain, stiffness, and swelling in the back of the heel, especially after exercise or in the morning.",
+        "Treatment involves rest, ice, physical therapy, and sometimes orthotics or supportive footwear. Severe cases may require further intervention.",
+        "Yes, Achilles tendinopathy is common in athletes, especially those involved in running or jumping sports.",
+        "Mild cases can heal with rest and proper care, but persistent pain may require medical treatment. Consult a healthcare provider for guidance."
+      ]
+    },
+    {
+      "tag": "acne",
+      "patterns": [
+        "What causes acne?",
+        "How can acne be treated?",
+        "Does diet affect acne?",
+        "Can stress cause acne?",
+        "Is acne common in adults?"
+      ],
+      "responses": [
+        "Acne is caused by clogged hair follicles due to excess oil, bacteria, and dead skin cells. Hormonal changes can also contribute.",
+        "Treatment options include over-the-counter products, prescription medications, and lifestyle changes. Consult a dermatologist for severe cases.",
+        "Diet can influence acne in some people. High-glycemic foods and dairy may trigger breakouts in some individuals.",
+        "Yes, stress can worsen acne by triggering hormonal changes that increase oil production.",
+        "Acne is not just a teenage problem; it’s common in adults too, especially in women due to hormonal fluctuations."
+      ]
+    },
+    {
+      "tag": "acute_cholecystitis",
+      "patterns": [
+        "What is acute cholecystitis?",
+        "What are the symptoms of acute cholecystitis?",
+        "How is acute cholecystitis treated?",
+        "What causes acute cholecystitis?",
+        "Is acute cholecystitis an emergency?"
+      ],
+      "responses": [
+        "Acute cholecystitis is the sudden inflammation of the gallbladder, usually caused by a gallstone blocking the bile duct.",
+        "Symptoms include severe pain in the upper right abdomen, fever, nausea, and tenderness.",
+        "Treatment often includes fasting, fluids, antibiotics, and sometimes surgery to remove the gallbladder.",
+        "Acute cholecystitis is typically caused by gallstones, but other factors like infections or tumors can contribute.",
+        "Yes, it can be a medical emergency requiring immediate treatment to prevent complications like infection or rupture."
+      ]
+    },
+    {
+      "tag": "acute_lymphoblastic_leukaemia",
+      "patterns": [
+        "What is acute lymphoblastic leukemia?",
+        "What are the signs of ALL?",
+        "How is ALL treated?",
+        "Is ALL common in children?",
+        "Can ALL be cured?"
+      ],
+      "responses": [
+        "Acute lymphoblastic leukemia (ALL) is a cancer of the blood and bone marrow that progresses rapidly.",
+        "Signs include fatigue, fever, frequent infections, bruising, and bone pain. Blood tests are needed for diagnosis.",
+        "Treatment involves chemotherapy, radiation, and possibly stem cell transplants. It depends on the patient’s age and health.",
+        "ALL is most common in children but can occur in adults too.",
+        "ALL is curable in many cases, especially in children, with prompt and effective treatment."
+      ]
+    },
+    {
+      "tag": "acute_lymphoblastic_leukaemia_children",
+      "patterns": [
+        "What causes acute lymphoblastic leukemia in children?",
+        "What are the symptoms of ALL in children?",
+        "How is ALL treated in children?",
+        "Can children recover from ALL?",
+        "Is ALL in children common?"
+      ],
+      "responses": [
+        "Acute lymphoblastic leukemia (ALL) in children is often caused by genetic mutations, though the exact cause is not always clear.",
+        "Symptoms include pale skin, fatigue, frequent infections, bruising, bleeding gums, and bone pain.",
+        "Treatment usually involves chemotherapy, targeted therapy, and sometimes radiation or stem cell transplants.",
+        "Yes, children with ALL have high survival rates, especially with early diagnosis and proper treatment.",
+        "ALL is the most common type of cancer in children, particularly in those under 15 years of age."
+      ]
+    },
+    {
+      "tag": "acute_lymphoblastic_leukaemia_teenagers_young_adults",
+      "patterns": [
+        "What are the symptoms of ALL in teenagers?",
+        "How is ALL treated in young adults?",
+        "Is ALL common in teenagers?",
+        "What causes ALL in young adults?",
+        "Can ALL be cured in young adults?"
+      ],
+      "responses": [
+        "Symptoms in teenagers and young adults include fatigue, swollen lymph nodes, fever, frequent infections, and unexplained weight loss.",
+        "Treatment typically involves intensive chemotherapy, sometimes followed by stem cell transplantation.",
+        "ALL is less common in teenagers and young adults than in younger children, but it does occur.",
+        "The exact cause is unknown, but it may involve genetic predispositions or environmental factors.",
+        "With proper treatment, many teenagers and young adults can achieve remission and long-term survival."
+      ]
+    },
+    {
+      "tag": "acute_myeloid_leukaemia",
+      "patterns": [
+        "What is acute myeloid leukemia?",
+        "What are the signs of AML?",
+        "How is AML treated?",
+        "Is AML common in adults?",
+        "Can AML be cured?"
+      ],
+      "responses": [
+        "Acute myeloid leukemia (AML) is a fast-growing cancer of the blood and bone marrow that affects immature blood cells.",
+        "Signs include fatigue, shortness of breath, frequent infections, easy bruising, and bleeding gums.",
+        "Treatment involves chemotherapy, targeted therapy, and possibly bone marrow or stem cell transplantation.",
+        "AML is more common in adults, especially those over 60 years of age.",
+        "AML can be cured, particularly in younger patients, with aggressive treatment and ongoing medical care."
+      ]
+    },
+    {
+      "tag": "acute_myeloid_leukaemia_children",
+      "patterns": [
+        "What causes acute myeloid leukemia in children?",
+        "What are the symptoms of AML in children?",
+        "How is AML treated in children?",
+        "Can children recover from AML?",
+        "Is AML common in children?"
+      ],
+      "responses": [
+        "AML in children is often linked to genetic conditions or prior exposure to chemotherapy, though the exact cause is unclear.",
+        "Symptoms include tiredness, paleness, frequent infections, fever, and unusual bleeding or bruising.",
+        "Treatment typically involves intensive chemotherapy, sometimes followed by a stem cell transplant.",
+        "Yes, with aggressive treatment, many children achieve remission, although the prognosis depends on individual factors.",
+        "AML is less common in children compared to acute lymphoblastic leukemia (ALL)."
+      ]
+    },
+    {
+      "tag": "acute_myeloid_leukaemia_teenagers_young_adults",
+      "patterns": [
+        "What are the signs of AML in young adults?",
+        "How is AML treated in teenagers?",
+        "Is AML common in young adults?",
+        "What causes AML in teenagers?",
+        "Can AML be cured in young adults?"
+      ],
+      "responses": [
+        "Signs of AML in young adults include fatigue, weight loss, frequent infections, and bruising or bleeding.",
+        "Treatment involves chemotherapy and, in some cases, a stem cell transplant.",
+        "AML is rare in teenagers and young adults but can still occur.",
+        "The causes of AML are not always clear but may involve genetic predispositions or environmental exposure.",
+        "With proper treatment, many young adults can achieve remission, but outcomes depend on specific disease characteristics."
+      ]
+    },
+    {
+      "tag": "atopic_eczema",
+      "patterns": [
+        "What is atopic eczema?",
+        "What are the symptoms of atopic eczema?",
+        "How is atopic eczema treated?",
+        "Is atopic eczema genetic?",
+        "Can atopic eczema be cured?"
+      ],
+      "responses": [
+        "Atopic eczema is a chronic skin condition that causes inflammation, redness, and itching.",
+        "Symptoms include dry, itchy, and inflamed skin, often on the face, hands, or inside elbows and knees.",
+        "Treatment includes moisturizing creams, topical steroids, antihistamines, and avoiding triggers.",
+        "Yes, atopic eczema often runs in families and may be linked to genetic and environmental factors.",
+        "There is no cure for atopic eczema, but symptoms can be managed effectively with proper care."
+      ]
+    },
+    {
+      "tag": "asthma",
+      "patterns": [
+        "What is asthma?",
+        "What are the symptoms of asthma?",
+        "How is asthma treated?",
+        "Can asthma attacks be prevented?",
+        "Is asthma common in children?"
+      ],
+      "responses": [
+        "Asthma is a chronic condition where the airways become inflamed and narrowed, causing breathing difficulties.",
+        "Symptoms include wheezing, shortness of breath, chest tightness, and coughing, especially at night or early morning.",
+        "Treatment involves inhalers (bronchodilators and corticosteroids) and managing triggers. Severe cases may require additional medication.",
+        "Yes, asthma attacks can often be prevented by avoiding triggers and using prescribed medications as directed.",
+        "Asthma is common in children and can persist into adulthood, but proper management helps reduce its impact."
+      ]
+    },
+    {
+      "tag": "acute_pancreatitis",
+      "patterns": [
+        "What is acute pancreatitis?",
+        "What causes acute pancreatitis?",
+        "What are the symptoms of acute pancreatitis?",
+        "How is acute pancreatitis treated?",
+        "Can acute pancreatitis be life-threatening?"
+      ],
+      "responses": [
+        "Acute pancreatitis is a sudden inflammation of the pancreas that can cause severe abdominal pain.",
+        "Common causes include gallstones, heavy alcohol use, high triglycerides, or certain medications.",
+        "Symptoms include severe upper abdominal pain, nausea, vomiting, fever, and a swollen abdomen.",
+        "Treatment typically involves hospitalization for pain management, fluids, and addressing the underlying cause, such as gallstones.",
+        "Yes, in severe cases, acute pancreatitis can lead to life-threatening complications like organ failure or infection."
+      ]
+    },
+    {
+      "tag": "alcohol_related_liver_disease",
+      "patterns": [
+        "What is alcohol-related liver disease?",
+        "What causes alcohol-related liver disease?",
+        "What are the symptoms of alcohol-related liver disease?",
+        "Can alcohol-related liver disease be reversed?",
+        "How is alcohol-related liver disease treated?"
+      ],
+      "responses": [
+        "Alcohol-related liver disease (ARLD) is liver damage caused by excessive alcohol consumption over time.",
+        "It is caused by long-term alcohol use, which leads to fatty liver, inflammation (alcoholic hepatitis), or scarring (cirrhosis).",
+        "Symptoms may include fatigue, weight loss, jaundice, abdominal pain, and swelling in the legs or abdomen.",
+        "Early stages, like fatty liver, can be reversed by stopping alcohol use, but advanced stages, like cirrhosis, cause permanent damage.",
+        "Treatment includes stopping alcohol use, proper nutrition, and medical interventions to manage symptoms or complications."
+      ]
+    },
+    {
+      "tag": "allergic_rhinitis",
+      "patterns": [
+        "What is allergic rhinitis?",
+        "What causes allergic rhinitis?",
+        "What are the symptoms of allergic rhinitis?",
+        "How is allergic rhinitis treated?",
+        "Can allergic rhinitis be cured?"
+      ],
+      "responses": [
+        "Allergic rhinitis, also known as hay fever, is an allergic reaction to airborne allergens like pollen, dust, or pet dander.",
+        "It is caused by an overreaction of the immune system to allergens, leading to inflammation in the nasal passages.",
+        "Symptoms include sneezing, runny or stuffy nose, itchy eyes, throat, and nose, and watery eyes.",
+        "Treatment options include antihistamines, nasal corticosteroids, decongestants, and avoiding allergen exposure.",
+        "Allergic rhinitis cannot be cured, but symptoms can be effectively managed with treatment and lifestyle changes."
+      ]
+    },
+    {
+      "tag": "anal_cancer",
+      "patterns": [
+        "What is anal cancer?",
+        "What causes anal cancer?",
+        "What are the symptoms of anal cancer?",
+        "How is anal cancer treated?",
+        "Is anal cancer common?"
+      ],
+      "responses": [
+        "Anal cancer is a rare type of cancer that develops in the tissues of the anus.",
+        "The main causes include infection with the human papillomavirus (HPV), smoking, and a weakened immune system.",
+        "Symptoms include rectal bleeding, pain, itching, a lump near the anus, or changes in bowel habits.",
+        "Treatment options include surgery, radiation therapy, and chemotherapy, depending on the stage of the cancer.",
+        "Anal cancer is not very common, but certain risk factors, like HPV infection, can increase its likelihood."
+      ]
+    },
+    {
+      "tag": "angina",
+      "patterns": [
+        "What is angina?",
+        "What causes angina?",
+        "What are the symptoms of angina?",
+        "How is angina treated?",
+        "Can angina lead to a heart attack?"
+      ],
+      "responses": [
+        "Angina is chest pain or discomfort caused by reduced blood flow to the heart muscle.",
+        "It is often caused by coronary artery disease due to plaque buildup in the arteries.",
+        "Symptoms include chest pain or pressure, shortness of breath, and discomfort in the arms, neck, jaw, or back.",
+        "Treatment includes medications, lifestyle changes, and sometimes procedures like angioplasty or bypass surgery.",
+        "Yes, angina can be a warning sign of a heart attack, so it’s important to seek medical evaluation if symptoms occur."
+      ]
+    },
+    {
+      "tag": "arterial_thrombosis",
+      "patterns": [
+        "What is arterial thrombosis?",
+        "What causes arterial thrombosis?",
+        "What are the symptoms of arterial thrombosis?",
+        "How is arterial thrombosis treated?",
+        "Can arterial thrombosis be life-threatening?"
+      ],
+      "responses": [
+        "Arterial thrombosis is the formation of a blood clot in an artery, which can block blood flow to vital organs.",
+        "It is caused by conditions like atherosclerosis, high cholesterol, smoking, or injuries to the arterial wall.",
+        "Symptoms depend on the affected area and may include sudden chest pain, stroke symptoms, or severe limb pain.",
+        "Treatment involves clot-dissolving medications, blood thinners, and sometimes surgical procedures to remove the clot.",
+        "Yes, arterial thrombosis can be life-threatening if it leads to a heart attack, stroke, or organ damage."
+      ]
+    },
+    {
+      "tag": "back_problems",
+      "patterns": [
+        "What are common causes of back problems?",
+        "How can back pain be treated?",
+        "What are the symptoms of a herniated disc?",
+        "Can poor posture lead to back problems?",
+        "How can I prevent back problems?"
+      ],
+      "responses": [
+        "Back problems can be caused by muscle strain, herniated discs, poor posture, or conditions like arthritis.",
+        "Treatment for back pain may include physical therapy, pain medications, exercise, or surgery in severe cases.",
+        "Symptoms of a herniated disc include back pain, numbness, or weakness that may extend to the legs.",
+        "Yes, poor posture can strain your back muscles and lead to chronic pain or other issues.",
+        "Preventing back problems involves regular exercise, maintaining good posture, and avoiding heavy lifting without proper form."
+      ]
+    },
+    {
+      "tag": "bacterial_vaginosis",
+      "patterns": [
+        "What is bacterial vaginosis?",
+        "What causes bacterial vaginosis?",
+        "What are the symptoms of bacterial vaginosis?",
+        "How is bacterial vaginosis treated?",
+        "Can bacterial vaginosis go away on its own?"
+      ],
+      "responses": [
+        "Bacterial vaginosis is an imbalance in the vaginal bacteria that can cause unusual discharge and odor.",
+        "It is caused by an overgrowth of harmful bacteria, often triggered by douching, new sexual partners, or hormonal changes.",
+        "Symptoms include a thin, gray or white vaginal discharge, a fishy odor, and mild itching or irritation.",
+        "Treatment typically involves antibiotics prescribed by a healthcare provider.",
+        "In some cases, mild bacterial vaginosis may resolve on its own, but treatment is recommended to prevent complications."
+      ]
+    },
+    {
+      "tag": "benign_prostate_enlargement",
+      "patterns": [
+        "What is benign prostate enlargement?",
+        "What causes benign prostate enlargement?",
+        "What are the symptoms of an enlarged prostate?",
+        "How is benign prostate enlargement treated?",
+        "Can an enlarged prostate cause complications?"
+      ],
+      "responses": [
+        "Benign prostate enlargement (BPE) is a non-cancerous growth of the prostate gland that can affect urination.",
+        "It is caused by hormonal changes as men age, particularly increased levels of dihydrotestosterone (DHT).",
+        "Symptoms include frequent urination, weak urine flow, difficulty starting or stopping urination, and a feeling of incomplete bladder emptying.",
+        "Treatment options include lifestyle changes, medications, minimally invasive procedures, or surgery in severe cases.",
+        "Yes, untreated BPE can lead to complications like urinary retention, bladder infections, or kidney damage."
+      ]
+    },
+    {
+      "tag": "bile_duct_cancer",
+      "patterns": [
+        "What is bile duct cancer?",
+        "What causes bile duct cancer?",
+        "What are the symptoms of cholangiocarcinoma?",
+        "How is bile duct cancer treated?",
+        "Is bile duct cancer common?"
+      ],
+      "responses": [
+        "Bile duct cancer, or cholangiocarcinoma, is a rare cancer that forms in the bile ducts connecting the liver to the small intestine.",
+        "Risk factors include chronic inflammation of the bile ducts, liver flukes, and certain genetic conditions.",
+        "Symptoms include jaundice, abdominal pain, weight loss, dark urine, and pale stools.",
+        "Treatment options include surgery, chemotherapy, and sometimes liver transplantation.",
+        "Bile duct cancer is rare but can be aggressive, making early detection important."
+      ]
+    },
+    {
+      "tag": "binge_eating",
+      "patterns": [
+        "What is binge eating?",
+        "What causes binge eating disorder?",
+        "What are the signs of binge eating?",
+        "How is binge eating treated?",
+        "Can binge eating be cured?"
+      ],
+      "responses": [
+        "Binge eating disorder involves consuming large amounts of food in a short period, often with a feeling of loss of control.",
+        "It can be caused by stress, emotional triggers, genetic factors, or past trauma.",
+        "Signs include eating quickly, eating when not hungry, eating in secret, and feeling guilty or ashamed afterward.",
+        "Treatment includes therapy (CBT), nutritional counseling, and sometimes medication to address underlying causes.",
+        "Yes, with proper treatment and support, many people recover from binge eating disorder."
+      ]
+    },
+    {
+      "tag": "bipolar_disorder",
+      "patterns": [
+        "What is bipolar disorder?",
+        "What causes bipolar disorder?",
+        "What are the symptoms of bipolar disorder?",
+        "How is bipolar disorder treated?",
+        "Can bipolar disorder be managed?"
+      ],
+      "responses": [
+        "Bipolar disorder is a mental health condition characterized by extreme mood swings, including manic and depressive episodes.",
+        "The exact cause is unclear, but it may involve genetic, environmental, and neurological factors.",
+        "Symptoms include periods of high energy and euphoria (mania) and periods of low energy, sadness, and hopelessness (depression).",
+        "Treatment includes mood stabilizers, therapy, and lifestyle changes to manage triggers.",
+        "Yes, with proper treatment and support, many individuals manage bipolar disorder effectively."
+      ]
+    },
+    {
+      "tag": "bladder_cancer",
+      "patterns": [
+        "What is bladder cancer?",
+        "What causes bladder cancer?",
+        "What are the symptoms of bladder cancer?",
+        "How is bladder cancer treated?",
+        "Is bladder cancer common?"
+      ],
+      "responses": [
+        "Bladder cancer is a type of cancer that begins in the cells lining the bladder.",
+        "Risk factors include smoking, exposure to certain chemicals, chronic bladder infections, and a family history of the disease.",
+        "Symptoms include blood in the urine, frequent urination, pain during urination, and lower back pain.",
+        "Treatment options include surgery, chemotherapy, radiation therapy, and immunotherapy.",
+        "Bladder cancer is relatively common, especially in older adults, and early detection improves outcomes."
+      ]
+    },
+    {
+      "tag": "blood_poisoning",
+      "patterns": [
+        "What is blood poisoning?",
+        "What causes sepsis?",
+        "What are the symptoms of sepsis?",
+        "How is sepsis treated?",
+        "Can sepsis be fatal?"
+      ],
+      "responses": [
+        "Blood poisoning, or sepsis, is a life-threatening condition caused by the body's extreme response to an infection.",
+        "It can be caused by bacterial, viral, or fungal infections that spread through the bloodstream.",
+        "Symptoms include high fever, rapid heart rate, confusion, low blood pressure, and difficulty breathing.",
+        "Sepsis is treated with antibiotics, intravenous fluids, and sometimes oxygen or surgery to remove the infection source.",
+        "Yes, sepsis can be fatal if not treated promptly, making early medical intervention critical."
+      ]
+    },
+    {
+      "tag": "bone_cancer",
+      "patterns": [
+        "What is bone cancer?",
+        "What causes bone cancer?",
+        "What are the symptoms of bone cancer?",
+        "How is bone cancer treated?",
+        "Is bone cancer rare?"
+      ],
+      "responses": [
+        "Bone cancer is a rare type of cancer that starts in the bones, such as osteosarcoma or Ewing sarcoma.",
+        "The exact cause is unknown, but genetic mutations or previous radiation exposure may play a role.",
+        "Symptoms include persistent bone pain, swelling, fractures, and difficulty moving the affected limb.",
+        "Treatment involves surgery, chemotherapy, and radiation therapy, depending on the type and stage of the cancer.",
+        "Yes, bone cancer is rare, especially in adults, and early detection is key to better outcomes."
+      ]
+    },
+    {
+      "tag": "bone_cancer_teens",
+      "patterns": [
+        "What is bone cancer in teenagers?",
+        "What are the symptoms of bone cancer in young adults?",
+        "How is bone cancer treated in teenagers?",
+        "Is bone cancer common in young people?",
+        "What causes bone cancer in teenagers?"
+      ],
+      "responses": [
+        "Bone cancer in teenagers is often osteosarcoma or Ewing sarcoma, which are more common in this age group.",
+        "Symptoms include bone pain, swelling, fatigue, and unexplained fractures.",
+        "Treatment includes surgery to remove the tumor, chemotherapy, and sometimes radiation therapy.",
+        "Bone cancer is rare but more likely to occur during periods of rapid growth, such as adolescence.",
+        "The causes are not fully understood but may involve genetic factors or previous radiation exposure."
+      ]
+    },
+    {
+      "tag": "bowel_cancer",
+      "patterns": [
+        "What is bowel cancer?",
+        "What causes bowel cancer?",
+        "What are the symptoms of bowel cancer?",
+        "How is bowel cancer treated?",
+        "Is bowel cancer preventable?"
+      ],
+      "responses": [
+        "Bowel cancer, also called colorectal cancer, is cancer that starts in the colon or rectum.",
+        "It is often caused by genetic mutations, a diet high in red or processed meat, obesity, smoking, or inflammatory bowel disease.",
+        "Symptoms include blood in the stool, changes in bowel habits, unexplained weight loss, and abdominal pain.",
+        "Treatment includes surgery, chemotherapy, radiation therapy, and targeted therapy depending on the stage of the cancer.",
+        "Yes, bowel cancer can often be prevented with regular screenings, a healthy diet, and an active lifestyle."
+      ]
+    },
+    {
+      "tag": "bowel_incontinence",
+      "patterns": [
+        "What is bowel incontinence?",
+        "What causes bowel incontinence?",
+        "What are the symptoms of bowel incontinence?",
+        "How is bowel incontinence treated?",
+        "Can bowel incontinence be managed?"
+      ],
+      "responses": [
+        "Bowel incontinence is the inability to control bowel movements, leading to accidental leakage.",
+        "It can be caused by muscle or nerve damage, constipation, diarrhea, or conditions like Crohn's disease.",
+        "Symptoms include the involuntary release of stool and an urgent need to defecate.",
+        "Treatment options include dietary changes, pelvic floor exercises, medications, or surgery in severe cases.",
+        "Yes, bowel incontinence can often be managed with treatment and lifestyle adjustments."
+      ]
+    },
+    {
+      "tag": "bowel_polyps",
+      "patterns": [
+        "What are bowel polyps?",
+        "What causes bowel polyps?",
+        "What are the symptoms of bowel polyps?",
+        "How are bowel polyps treated?",
+        "Can bowel polyps turn into cancer?"
+      ],
+      "responses": [
+        "Bowel polyps are small growths on the lining of the colon or rectum that are usually harmless but can sometimes become cancerous.",
+        "They may develop due to genetic factors, age, or a diet high in fat and low in fiber.",
+        "Most bowel polyps do not cause symptoms, but some may lead to rectal bleeding or changes in bowel habits.",
+        "Treatment involves removing the polyps during a colonoscopy to prevent complications.",
+        "Yes, some types of polyps, like adenomas, can develop into cancer over time if left untreated."
+      ]
+    },
+    {
+      "tag": "brain_stem_death",
+      "patterns": [
+        "What is brain stem death?",
+        "What causes brain stem death?",
+        "How is brain stem death diagnosed?",
+        "Can brain stem death be reversed?",
+        "What are the signs of brain stem death?"
+      ],
+      "responses": [
+        "Brain stem death occurs when the brain stem stops functioning, leading to a permanent loss of consciousness and the inability to breathe without support.",
+        "It can be caused by severe brain injury, stroke, or conditions that lead to brain swelling or oxygen deprivation.",
+        "Diagnosis involves a series of clinical tests to check for brain stem reflexes and the ability to breathe independently.",
+        "No, brain stem death is irreversible and is legally considered death in most countries.",
+        "Signs include the absence of brain stem reflexes, no response to pain, and no independent breathing."
+      ]
+    },
+    {
+      "tag": "brain_tumours",
+      "patterns": [
+        "What are brain tumours?",
+        "What causes brain tumours?",
+        "What are the symptoms of brain tumours?",
+        "How are brain tumours treated?",
+        "Are all brain tumours cancerous?"
+      ],
+      "responses": [
+        "Brain tumours are abnormal growths of cells in the brain that can be benign (non-cancerous) or malignant (cancerous).",
+        "Causes include genetic mutations, exposure to radiation, or unknown factors.",
+        "Symptoms may include persistent headaches, nausea, seizures, vision changes, or difficulty speaking or walking.",
+        "Treatment options include surgery, radiation therapy, chemotherapy, or targeted therapy based on the type and location of the tumour.",
+        "No, not all brain tumours are cancerous. Benign tumours may still require treatment if they affect brain function."
+      ]
+    },
+    {
+      "tag": "brain_tumours_children",
+      "patterns": [
+        "What are brain tumours in children?",
+        "What causes brain tumours in children?",
+        "What are the symptoms of brain tumours in children?",
+        "How are brain tumours treated in children?",
+        "Are brain tumours common in children?"
+      ],
+      "responses": [
+        "Brain tumours in children are abnormal cell growths in the brain that can be benign or malignant.",
+        "The exact causes are often unknown, but some may be linked to genetic syndromes or exposure to radiation.",
+        "Symptoms include headaches, vomiting, balance problems, behavioral changes, and seizures.",
+        "Treatment includes surgery, radiation therapy (used cautiously in younger children), and chemotherapy.",
+        "Brain tumours are one of the most common types of cancer in children, but they are still relatively rare."
+      ]
+    },
+    {
+      "tag": "brain_tumours_teenagers",
+      "patterns": [
+        "What are brain tumours in teenagers?",
+        "What are the symptoms of brain tumours in young adults?",
+        "How are brain tumours treated in teenagers?",
+        "What causes brain tumours in young adults?",
+        "Are brain tumours common in teenagers?"
+      ],
+      "responses": [
+        "Brain tumours in teenagers and young adults are abnormal growths of cells in the brain that can disrupt normal brain function.",
+        "Symptoms include headaches, fatigue, vision changes, mood swings, and difficulty concentrating.",
+        "Treatment options include surgery, radiation therapy, and chemotherapy tailored to the tumour's type and location.",
+        "Causes are not always clear but may involve genetic predisposition or environmental factors like radiation exposure.",
+        "Brain tumours are uncommon in teenagers, but early detection and treatment are critical for better outcomes."
+      ]
+    },
+    {
+      "tag": "breast_cancer_female",
+      "patterns": [
+        "What is breast cancer in women?",
+        "What causes breast cancer in females?",
+        "What are the symptoms of breast cancer?",
+        "How is breast cancer treated?",
+        "Is breast cancer common in women?"
+      ],
+      "responses": [
+        "Breast cancer in women is the abnormal growth of cells in the breast tissue, often forming a lump or mass.",
+        "Causes include genetic mutations, hormonal factors, and lifestyle factors like alcohol consumption or obesity.",
+        "Symptoms include a lump in the breast, changes in breast shape, nipple discharge, or skin changes.",
+        "Treatment options include surgery, chemotherapy, radiation therapy, hormone therapy, and targeted therapy.",
+        "Yes, breast cancer is one of the most common cancers in women worldwide."
+      ]
+    },
+    {
+      "tag": "breast_cancer_male",
+      "patterns": [
+        "What is breast cancer in men?",
+        "What causes breast cancer in males?",
+        "What are the symptoms of breast cancer in men?",
+        "How is male breast cancer treated?",
+        "Is breast cancer rare in men?"
+      ],
+      "responses": [
+        "Breast cancer in men is a rare condition involving the growth of malignant cells in male breast tissue.",
+        "Causes include genetic factors, high estrogen levels, and a family history of breast cancer.",
+        "Symptoms include a lump in the breast, nipple discharge, and changes in the skin or nipple.",
+        "Treatment involves surgery, radiation therapy, chemotherapy, or hormone therapy depending on the stage.",
+        "Yes, breast cancer in men is rare, accounting for less than 1% of all breast cancer cases."
+      ]
+    },
+    {
+      "tag": "bronchiectasis",
+      "patterns": [
+        "What is bronchiectasis?",
+        "What causes bronchiectasis?",
+        "What are the symptoms of bronchiectasis?",
+        "How is bronchiectasis treated?",
+        "Can bronchiectasis be cured?"
+      ],
+      "responses": [
+        "Bronchiectasis is a chronic lung condition where the airways become permanently widened and inflamed.",
+        "It is caused by repeated lung infections, cystic fibrosis, or immune system disorders.",
+        "Symptoms include a persistent cough, production of thick mucus, breathlessness, and recurrent chest infections.",
+        "Treatment includes airway clearance techniques, antibiotics for infections, and sometimes bronchodilators.",
+        "While there is no cure for bronchiectasis, symptoms can be managed to improve quality of life."
+      ]
+    },
+    {
+      "tag": "bronchitis",
+      "patterns": [
+        "What is bronchitis?",
+        "What causes bronchitis?",
+        "What are the symptoms of bronchitis?",
+        "How is bronchitis treated?",
+        "Can bronchitis be prevented?"
+      ],
+      "responses": [
+        "Bronchitis is the inflammation of the bronchial tubes, which carry air to and from the lungs.",
+        "It is caused by viral infections, bacterial infections, or irritants like smoking and air pollution.",
+        "Symptoms include a persistent cough, mucus production, fatigue, shortness of breath, and chest discomfort.",
+        "Treatment for bronchitis may involve rest, fluids, cough suppressants, and sometimes antibiotics if caused by bacteria.",
+        "To prevent bronchitis, avoid smoking, wear masks in polluted areas, and practice good hygiene to reduce infection risks."
+      ]
+    },
+    {
+      "tag": "bulimia_nervosa",
+      "patterns": [
+        "What is bulimia nervosa?",
+        "What causes bulimia nervosa?",
+        "What are the symptoms of bulimia nervosa?",
+        "How is bulimia nervosa treated?",
+        "Is bulimia a serious condition?"
+      ],
+      "responses": [
+        "Bulimia nervosa is an eating disorder characterized by cycles of binge eating followed by purging through vomiting, laxatives, or excessive exercise.",
+        "It may be caused by genetic, psychological, societal, or environmental factors.",
+        "Symptoms include binge eating, purging behaviors, fear of weight gain, and physical signs like dental erosion and dehydration.",
+        "Treatment includes psychotherapy (like CBT), nutritional counseling, and sometimes medications like antidepressants.",
+        "Yes, bulimia is a serious condition that can lead to severe health complications, including heart issues and electrolyte imbalances."
+      ]
+    },
+    {
+      "tag": "bunion",
+      "patterns": [
+        "What is a bunion?",
+        "What causes bunions?",
+        "What are the symptoms of a bunion?",
+        "How is a bunion treated?",
+        "Can bunions be prevented?"
+      ],
+      "responses": [
+        "A bunion is a bony bump that forms at the base of the big toe, causing the toe to point toward the other toes.",
+        "It can be caused by wearing tight or ill-fitting shoes, genetic predisposition, or conditions like arthritis.",
+        "Symptoms include pain, swelling, redness, and difficulty walking due to the deformity.",
+        "Treatment includes wearing proper footwear, using orthotics, icing, and in severe cases, surgery to realign the bones.",
+        "To prevent bunions, wear comfortable shoes with a wide toe box and avoid high heels or tight footwear."
+      ]
+    },
+    {
+      "tag": "coronary_heart_disease",
+      "patterns": [
+        "What is coronary heart disease?",
+        "What causes coronary heart disease?",
+        "What are the symptoms of coronary heart disease?",
+        "How is coronary heart disease treated?",
+        "Can coronary heart disease be cured?"
+      ],
+      "responses": [
+        "Coronary heart disease (CHD) occurs when the coronary arteries become narrowed or blocked, reducing blood flow to the heart.",
+        "It is caused by a buildup of fatty deposits (atherosclerosis) and risk factors like high cholesterol, smoking, and high blood pressure.",
+        "Symptoms include chest pain (angina), shortness of breath, fatigue, and, in severe cases, heart attack.",
+        "Treatment includes lifestyle changes, medications, and procedures like angioplasty, stenting, or bypass surgery.",
+        "CHD cannot be completely cured, but it can be managed effectively with proper treatment and lifestyle adjustments."
+      ]
+    },
+    {
+      "tag": "coronavirus_covid19",
+      "patterns": [
+        "What is COVID-19?",
+        "What causes coronavirus?",
+        "What are the symptoms of COVID-19?",
+        "How is COVID-19 treated?",
+        "Can COVID-19 be prevented?"
+      ],
+      "responses": [
+        "COVID-19 is a respiratory illness caused by the SARS-CoV-2 virus, first identified in 2019.",
+        "It spreads through respiratory droplets and close contact with infected individuals.",
+        "Symptoms range from mild to severe and include fever, cough, shortness of breath, loss of taste or smell, fatigue, and body aches.",
+        "Treatment depends on severity and may include antiviral medications, supportive care, and oxygen therapy in severe cases.",
+        "Prevention includes vaccination, wearing masks, maintaining social distance, and practicing good hygiene."
+      ]
+    },
+    {
+      "tag": "long_covid",
+      "patterns": [
+        "What is long COVID?",
+        "What are the symptoms of long COVID?",
+        "How long do COVID-19 symptoms last?",
+        "What causes long COVID?",
+        "How is long COVID treated?"
+      ],
+      "responses": [
+        "Long COVID refers to persistent symptoms lasting weeks or months after recovering from the initial COVID-19 infection.",
+        "Symptoms include fatigue, brain fog, shortness of breath, chest pain, joint pain, and difficulty concentrating.",
+        "The duration varies, with some people recovering in weeks and others experiencing symptoms for months.",
+        "The exact cause of long COVID is unclear but may involve lingering inflammation or immune system responses.",
+        "Treatment focuses on symptom management, rehabilitation, and addressing specific complications with medical guidance."
+      ]
+    },
+    {
+      "tag": "cough",
+      "patterns": [
+        "What causes a cough?",
+        "How can I stop coughing?",
+        "What are the symptoms of a chronic cough?",
+        "When should I see a doctor for a cough?",
+        "Is coughing a symptom of a serious illness?"
+      ],
+      "responses": [
+        "A cough can be caused by colds, flu, allergies, asthma, smoking, or conditions like pneumonia and GERD.",
+        "To stop coughing, drink warm fluids, use throat lozenges, or try over-the-counter cough suppressants. Treat the underlying cause if known.",
+        "Chronic cough symptoms include persistent coughing for over 8 weeks, often accompanied by throat irritation, hoarseness, or fatigue.",
+        "See a doctor if your cough lasts more than 3 weeks, produces blood, or is accompanied by fever, weight loss, or shortness of breath.",
+        "Coughing can sometimes indicate a serious illness like pneumonia, tuberculosis, or lung cancer. A healthcare provider can determine the cause."
+      ]
+    },
+    {
+      "tag": "croup",
+      "patterns": [
+        "What is croup?",
+        "What causes croup?",
+        "What are the symptoms of croup?",
+        "How is croup treated?",
+        "Is croup serious in children?"
+      ],
+      "responses": [
+        "Croup is a respiratory condition caused by viral infections, leading to swelling in the airway.",
+        "It is most commonly caused by the parainfluenza virus, though other viruses can also be responsible.",
+        "Symptoms include a barking cough, hoarseness, stridor (noisy breathing), and sometimes fever or difficulty breathing.",
+        "Treatment often includes cool mist, hydration, and in severe cases, corticosteroids or nebulized epinephrine to reduce airway swelling.",
+        "While most cases are mild, severe croup can require emergency care, especially if breathing becomes difficult."
+      ]
+    },
+    {
+      "tag": "cystitis",
+      "patterns": [
+        "What is cystitis?",
+        "What causes cystitis?",
+        "What are the symptoms of cystitis?",
+        "How is cystitis treated?",
+        "Can cystitis be prevented?"
+      ],
+      "responses": [
+        "Cystitis is an inflammation of the bladder, usually caused by a bacterial infection (urinary tract infection).",
+        "It can result from bacteria entering the bladder, irritation from chemicals, or underlying medical conditions.",
+        "Symptoms include a burning sensation during urination, frequent urination, cloudy or strong-smelling urine, and pelvic discomfort.",
+        "Treatment typically involves antibiotics for bacterial infections, pain relief, and increased fluid intake.",
+        "To prevent cystitis, stay hydrated, urinate after sexual activity, and avoid irritating products like harsh soaps or douches."
+      ]
+    },
+    {
+      "tag": "chest_rib_injury",
+      "patterns": [
+        "What causes chest injuries?",
+        "What are the symptoms of a rib injury?",
+        "How are chest injuries treated?",
+        "When should I see a doctor for a rib injury?",
+        "Can rib injuries be serious?"
+      ],
+      "responses": [
+        "Chest injuries can result from trauma like falls, car accidents, or direct blows to the chest.",
+        "Rib injury symptoms include sharp pain, difficulty breathing deeply, and tenderness over the affected area.",
+        "Treatment depends on severity and may include pain relief, rest, and in severe cases, surgical intervention for internal damage.",
+        "Seek medical attention if you have difficulty breathing, severe pain, or suspect a fractured rib.",
+        "While most rib injuries heal with rest, severe injuries involving internal organs or collapsed lungs can be life-threatening."
+      ]
+    },
+    {
+      "tag": "chest_infection",
+      "patterns": [
+        "What is a chest infection?",
+        "What causes a chest infection?",
+        "What are the symptoms of a chest infection?",
+        "How is a chest infection treated?",
+        "Can chest infections be prevented?"
+      ],
+      "responses": [
+        "A chest infection involves the lungs or airways, including bronchitis and pneumonia.",
+        "It is caused by bacteria, viruses, or fungi, often following a cold or flu.",
+        "Symptoms include cough, mucus production, fever, shortness of breath, and chest discomfort.",
+        "Treatment depends on the cause and may include rest, fluids, antibiotics for bacterial infections, or antiviral medications.",
+        "Preventing chest infections involves good hygiene, staying vaccinated, and avoiding smoking."
+      ]
+    },
+    {
+      "tag": "chickenpox",
+      "patterns": [
+        "What is chickenpox?",
+        "What causes chickenpox?",
+        "What are the symptoms of chickenpox?",
+        "How is chickenpox treated?",
+        "Can chickenpox be prevented?"
+      ],
+      "responses": [
+        "Chickenpox is a contagious disease caused by the varicella-zoster virus.",
+        "It spreads through direct contact with the rash or respiratory droplets from an infected person.",
+        "Symptoms include an itchy rash, blisters, fever, fatigue, and body aches.",
+        "Treatment involves rest, antihistamines for itch relief, and staying hydrated. Antiviral medications may be prescribed in severe cases.",
+        "Chickenpox can be prevented through vaccination and by avoiding contact with infected individuals."
+      ]
+    },
+    {
+      "tag": "chronic_kidney_disease",
+      "patterns": [
+        "What is chronic kidney disease?",
+        "What causes chronic kidney disease?",
+        "What are the symptoms of chronic kidney disease?",
+        "How is chronic kidney disease treated?",
+        "Can chronic kidney disease be prevented?"
+      ],
+      "responses": [
+        "Chronic kidney disease (CKD) is a long-term condition where the kidneys don't work as well as they should.",
+        "It is often caused by diabetes, high blood pressure, or conditions that affect kidney function.",
+        "Symptoms may include fatigue, swelling in the legs or ankles, changes in urination, and nausea, but early stages often have no symptoms.",
+        "Treatment involves managing the underlying cause, medications, dietary changes, and in advanced cases, dialysis or kidney transplant.",
+        "Prevent CKD by managing blood pressure and blood sugar levels, staying hydrated, and avoiding excessive use of NSAIDs."
+      ]
+    },
+    {
+      "tag": "coma",
+      "patterns": [
+        "What is a coma?",
+        "What causes a coma?",
+        "What are the symptoms of a coma?",
+        "How is a coma treated?",
+        "Can people recover from a coma?"
+      ],
+      "responses": [
+        "A coma is a prolonged state of unconsciousness where a person cannot be awakened and has minimal brain activity.",
+        "It can result from traumatic brain injuries, strokes, infections, drug overdoses, or severe metabolic imbalances.",
+        "Symptoms include lack of response to stimuli, closed eyes, and absence of voluntary movements.",
+        "Treatment focuses on addressing the underlying cause, providing supportive care, and preventing complications.",
+        "Recovery depends on the cause and severity; some people regain full consciousness, while others may experience long-term impairments."
+      ]
+    },
+    {
+      "tag": "common_cold",
+      "patterns": [
+        "What is the common cold?",
+        "What causes the common cold?",
+        "What are the symptoms of the common cold?",
+        "How is the common cold treated?",
+        "Can the common cold be prevented?"
+      ],
+      "responses": [
+        "The common cold is a viral infection of the upper respiratory tract, usually caused by rhinoviruses.",
+        "It spreads through respiratory droplets, direct contact with infected surfaces, or close contact with sick individuals.",
+        "Symptoms include a runny or stuffy nose, sore throat, sneezing, cough, and mild fatigue.",
+        "Treatment focuses on symptom relief with rest, hydration, over-the-counter medications, and saline sprays.",
+        "Prevent the common cold by washing hands frequently, avoiding close contact with sick individuals, and maintaining a healthy immune system."
+      ]
+    },
+    {
+      "tag": "deep_vein_thrombosis",
+      "patterns": [
+        "What is deep vein thrombosis?",
+        "What causes deep vein thrombosis?",
+        "What are the symptoms of DVT?",
+        "How is DVT treated?",
+        "Can DVT be prevented?"
+      ],
+      "responses": [
+        "Deep vein thrombosis (DVT) occurs when a blood clot forms in a deep vein, usually in the legs.",
+        "It can be caused by prolonged inactivity, surgery, certain medical conditions, or a genetic tendency to form clots.",
+        "Symptoms include leg pain or tenderness, swelling, redness, and warmth in the affected area. However, some cases may have no symptoms.",
+        "Treatment includes blood thinners, clot-dissolving medications, compression stockings, and lifestyle changes. Severe cases may require surgery.",
+        "Prevent DVT by staying active, avoiding prolonged immobility, staying hydrated, and using compression stockings during long travel."
+      ]
+    },
+    {
+      "tag": "dementia",
+      "patterns": [
+        "What is dementia?",
+        "What causes dementia?",
+        "What are the symptoms of dementia?",
+        "How is dementia treated?",
+        "Can dementia be prevented?"
+      ],
+      "responses": [
+        "Dementia is a group of symptoms affecting memory, thinking, and social abilities, significantly interfering with daily life.",
+        "It can be caused by diseases like Alzheimer's, stroke, or brain injuries, as well as other conditions like Parkinson's or Huntington's disease.",
+        "Symptoms include memory loss, confusion, difficulty communicating, changes in mood or behavior, and difficulty performing daily tasks.",
+        "While there is no cure for most types of dementia, treatments like medications, therapy, and lifestyle changes can help manage symptoms and improve quality of life.",
+        "Some cases of dementia may be preventable by maintaining a healthy lifestyle, controlling blood pressure, and staying mentally active."
+      ]
+    },
+    {
+      "tag": "diarrhoea",
+      "patterns": [
+        "What causes diarrhoea?",
+        "How do you treat diarrhoea?",
+        "What are the symptoms of diarrhoea?",
+        "Can diarrhoea be serious?",
+        "How can diarrhoea be prevented?"
+      ],
+      "responses": [
+        "Diarrhoea is the passing of loose or watery stools, often caused by infections, food intolerance, or digestive conditions.",
+        "Common causes include viral or bacterial infections, food poisoning, lactose intolerance, or chronic diseases like irritable bowel syndrome (IBS).",
+        "Symptoms include frequent, watery stools, abdominal cramps, bloating, and dehydration in severe cases.",
+        "Treatment focuses on staying hydrated, using oral rehydration solutions, and in some cases, medications to address underlying causes.",
+        "Prevent diarrhoea by maintaining good hygiene, washing hands regularly, avoiding contaminated food or water, and practicing safe food handling."
+      ]
+    },
+    {
+      "tag": "diabetic_retinopathy",
+      "patterns": [
+        "What is diabetic retinopathy?",
+        "What causes diabetic retinopathy?",
+        "What are the symptoms of diabetic retinopathy?",
+        "How is diabetic retinopathy treated?",
+        "Can diabetic retinopathy be prevented?"
+      ],
+      "responses": [
+        "Diabetic retinopathy is an eye condition caused by damage to the blood vessels in the retina due to high blood sugar levels.",
+        "It develops over time as a complication of poorly controlled diabetes.",
+        "Symptoms include blurred vision, dark spots, difficulty seeing at night, and eventual vision loss if untreated.",
+        "Treatment options include laser therapy, injections, or surgery to repair damaged blood vessels and preserve vision.",
+        "Prevent diabetic retinopathy by managing blood sugar, blood pressure, and cholesterol levels, along with regular eye exams."
+      ]
+    },
+    {
+      "tag": "dysentery",
+      "patterns": [
+        "What is dysentery?",
+        "What causes dysentery?",
+        "What are the symptoms of dysentery?",
+        "How is dysentery treated?",
+        "Can dysentery be prevented?"
+      ],
+      "responses": [
+        "Dysentery is an infection of the intestines that causes severe diarrhea with blood or mucus, often accompanied by abdominal pain.",
+        "It is caused by bacteria like Shigella or parasites like Entamoeba histolytica, usually from contaminated food or water.",
+        "Symptoms include diarrhea with blood, fever, nausea, abdominal cramps, and dehydration.",
+        "Treatment depends on the cause and may include antibiotics, antiparasitic medications, and rehydration therapy.",
+        "Prevent dysentery by practicing good hygiene, drinking safe water, and avoiding contaminated food."
+      ]
+    },
+    {
+      "tag": "dystonia",
+      "patterns": [
+        "What is dystonia?",
+        "What causes dystonia?",
+        "What are the symptoms of dystonia?",
+        "How is dystonia treated?",
+        "Can dystonia be cured?"
+      ],
+      "responses": [
+        "Dystonia is a movement disorder that causes involuntary muscle contractions, resulting in twisting or repetitive movements.",
+        "It can be caused by genetic factors, brain injury, or conditions like Parkinson's disease. It can also occur without a known cause.",
+        "Symptoms include muscle spasms, abnormal postures, and difficulty controlling movements. It may affect one part of the body or multiple areas.",
+        "Treatment includes medications like muscle relaxants, botulinum toxin injections, physical therapy, and in some cases, deep brain stimulation surgery.",
+        "While there is no cure, treatments can help manage symptoms and improve quality of life."
+      ]
+    },
+    {
+      "tag": "ear_infection",
+      "patterns": [
+        "What is an ear infection?",
+        "What causes an ear infection?",
+        "What are the symptoms of an ear infection?",
+        "How is an ear infection treated?",
+        "Can ear infections be prevented?"
+      ],
+      "responses": [
+        "An ear infection is inflammation or infection of the middle ear, often caused by bacteria or viruses.",
+        "It commonly occurs after a cold, flu, or allergies that block the Eustachian tubes, trapping fluid in the ear.",
+        "Symptoms include ear pain, fever, difficulty hearing, and fluid drainage from the ear. In children, irritability and tugging at the ear may occur.",
+        "Treatment depends on the severity and may include pain relievers, antibiotics, or in some cases, surgical drainage with ear tubes.",
+        "Prevent ear infections by practicing good hygiene, avoiding secondhand smoke, and ensuring timely vaccinations."
+      ]
+    },
+    {
+      "tag": "ebola_virus_disease",
+      "patterns": [
+        "What is Ebola virus disease?",
+        "What causes Ebola?",
+        "What are the symptoms of Ebola virus disease?",
+        "How is Ebola virus disease treated?",
+        "Can Ebola virus disease be prevented?"
+      ],
+      "responses": [
+        "Ebola virus disease (EVD) is a severe and often fatal illness caused by the Ebola virus, primarily transmitted through contact with infected bodily fluids.",
+        "Ebola is caused by infection with the Ebola virus, which spreads through direct contact with blood, secretions, or contaminated surfaces.",
+        "Symptoms include fever, severe headache, muscle pain, weakness, vomiting, diarrhea, abdominal pain, and unexplained bleeding or bruising.",
+        "Treatment focuses on supportive care, such as rehydration, oxygen therapy, and managing symptoms. Experimental treatments and vaccines are also available.",
+        "Prevent Ebola by avoiding contact with infected individuals, practicing good hygiene, and following safety protocols during outbreaks."
+      ]
+    },
+    {
+      "tag": "escherichia_coli",
+      "patterns": [
+        "What is E. coli?",
+        "What causes E. coli infection?",
+        "What are the symptoms of E. coli infection?",
+        "How is E. coli infection treated?",
+        "How can E. coli infection be prevented?"
+      ],
+      "responses": [
+        "Escherichia coli (E. coli) is a type of bacteria that lives in the intestines of humans and animals. Some strains can cause severe foodborne illness.",
+        "E. coli infections are often caused by consuming contaminated food or water, raw vegetables, or undercooked meat.",
+        "Symptoms include diarrhea (sometimes bloody), abdominal pain, nausea, vomiting, and fever in some cases.",
+        "Treatment involves staying hydrated, and most cases resolve on their own. Antibiotics are usually not recommended, as they can worsen certain strains.",
+        "Prevent E. coli by cooking food thoroughly, washing hands and produce, and avoiding unpasteurized dairy products."
+      ]
+    },
+    {
+      "tag": "ewing_sarcoma",
+      "patterns": [
+        "What is Ewing sarcoma?",
+        "What causes Ewing sarcoma?",
+        "What are the symptoms of Ewing sarcoma?",
+        "How is Ewing sarcoma treated?",
+        "Is Ewing sarcoma common in children?"
+      ],
+      "responses": [
+        "Ewing sarcoma is a rare type of cancer that occurs in bones or the soft tissue around bones, commonly affecting children and young adults.",
+        "The exact cause of Ewing sarcoma is not known, but it is linked to genetic mutations in cells.",
+        "Symptoms include persistent bone pain, swelling, tenderness, and, in some cases, fever or unexplained weight loss.",
+        "Treatment typically includes chemotherapy, surgery, and radiation therapy. Early diagnosis improves outcomes.",
+        "Yes, Ewing sarcoma is most common in children and adolescents, with the highest incidence between ages 10 and 20."
+      ]
+    },
+    {
+      "tag": "ewing_sarcoma_children",
+      "patterns": [
+        "What is Ewing sarcoma in children?",
+        "How does Ewing sarcoma affect children?",
+        "What are the symptoms of Ewing sarcoma in children?",
+        "How is Ewing sarcoma treated in children?",
+        "Is Ewing sarcoma curable in children?"
+      ],
+      "responses": [
+        "Ewing sarcoma in children is a rare cancer that develops in bones or nearby soft tissues, most often affecting the pelvis, legs, or arms.",
+        "It commonly affects children during periods of rapid growth and may be linked to genetic changes.",
+        "Symptoms in children include localized pain, swelling, fever, and decreased mobility of the affected area.",
+        "Treatment for children includes a combination of chemotherapy, surgery, and radiation therapy. Supportive care helps manage side effects.",
+        "With early and aggressive treatment, the prognosis for children with Ewing sarcoma can be favorable, but outcomes vary by case."
+      ]
+    },
+    {
+      "tag": "eye_cancer",
+      "patterns": [
+        "What is eye cancer?",
+        "What causes eye cancer?",
+        "What are the symptoms of eye cancer?",
+        "How is eye cancer treated?",
+        "Is eye cancer curable?"
+      ],
+      "responses": [
+        "Eye cancer is a rare condition that occurs when abnormal cells grow in or around the eye. Types include melanoma, lymphoma, and retinoblastoma.",
+        "The causes of eye cancer are not fully understood but may include genetic factors, exposure to UV rays, or other environmental influences.",
+        "Symptoms include blurred vision, a visible dark spot on the eye, changes in the shape of the pupil, flashes of light, or loss of vision.",
+        "Treatment depends on the type and stage of the cancer and may include surgery, radiation therapy, laser therapy, or chemotherapy.",
+        "Early detection can improve the chances of successful treatment. Some forms of eye cancer are curable, while others require ongoing management."
+      ]
+    },
+    {
+      "tag": "fibromyalgia",
+      "patterns": [
+        "What is fibromyalgia?",
+        "What are the symptoms of fibromyalgia?",
+        "How is fibromyalgia diagnosed?",
+        "What causes fibromyalgia?",
+        "Can fibromyalgia be treated?"
+      ],
+      "responses": [
+        "Fibromyalgia is a long-term condition that causes widespread pain, fatigue, and tenderness in the body.",
+        "Symptoms of fibromyalgia include chronic pain, fatigue, difficulty sleeping, memory issues, and sensitivity to touch.",
+        "Diagnosis of fibromyalgia is based on symptoms and ruling out other conditions, as there is no specific test for it.",
+        "The exact cause of fibromyalgia is not known, but it may involve genetic factors, stress, or abnormal pain processing in the brain.",
+        "While there is no cure, fibromyalgia can be managed with medications, physical therapy, lifestyle changes, and stress management."
+      ]
+    },
+    {
+      "tag": "flu",
+      "patterns": [
+        "What is the flu?",
+        "What are the symptoms of the flu?",
+        "How is the flu different from a cold?",
+        "Can the flu be treated?",
+        "How can I prevent the flu?"
+      ],
+      "responses": [
+        "The flu, or influenza, is a contagious respiratory illness caused by influenza viruses.",
+        "Symptoms of the flu include fever, chills, cough, sore throat, muscle aches, fatigue, and sometimes vomiting or diarrhea.",
+        "Unlike a cold, the flu usually comes on suddenly with more severe symptoms, such as high fever and body aches.",
+        "Treatment may include antiviral medications, rest, and staying hydrated. Most people recover within a week or two.",
+        "Prevent the flu by getting an annual flu vaccine, washing hands regularly, and avoiding close contact with sick individuals."
+      ]
+    },
+    {
+      "tag": "food_poisoning",
+      "patterns": [
+        "What is food poisoning?",
+        "What causes food poisoning?",
+        "What are the symptoms of food poisoning?",
+        "How is food poisoning treated?",
+        "How can I prevent food poisoning?"
+      ],
+      "responses": [
+        "Food poisoning occurs when you consume food or drinks contaminated with harmful bacteria, viruses, or toxins.",
+        "Common causes include consuming undercooked meat, unpasteurized dairy, contaminated water, or improperly stored food.",
+        "Symptoms include nausea, vomiting, diarrhea, stomach cramps, fever, and dehydration in severe cases.",
+        "Treatment focuses on staying hydrated and resting. Severe cases may require medical attention or antibiotics if caused by bacteria.",
+        "Prevent food poisoning by washing hands, cooking food thoroughly, refrigerating leftovers promptly, and avoiding cross-contamination in the kitchen."
+      ]
+    },
+    {
+      "tag": "functional_neurological_disorder",
+      "patterns": [
+        "What is functional neurological disorder?",
+        "What causes functional neurological disorder?",
+        "What are the symptoms of functional neurological disorder?",
+        "How is functional neurological disorder treated?",
+        "Can functional neurological disorder be cured?"
+      ],
+      "responses": [
+        "Functional neurological disorder (FND) is a condition where neurological symptoms, such as weakness or seizures, occur without a clear structural or physiological cause.",
+        "The exact causes are not fully understood but may involve stress, trauma, or changes in brain function.",
+        "Symptoms include limb weakness, tremors, seizures, difficulty walking, or speech problems that do not have an identifiable medical cause.",
+        "Treatment focuses on addressing triggers, physical therapy, psychotherapy, and sometimes medications for associated conditions like anxiety or depression.",
+        "While FND can be challenging, many people see improvements with proper treatment and support."
+      ]
+    },
+    {
+      "tag": "gastroenteritis",
+      "patterns": [
+        "What is gastroenteritis?",
+        "What causes gastroenteritis?",
+        "What are the symptoms of gastroenteritis?",
+        "How is gastroenteritis treated?",
+        "Can gastroenteritis be prevented?"
+      ],
+      "responses": [
+        "Gastroenteritis, often called the stomach flu, is an infection of the stomach and intestines, causing diarrhea and vomiting.",
+        "Causes include viruses like norovirus, bacteria such as E. coli, or parasites. Contaminated food and water are common sources.",
+        "Symptoms include diarrhea, vomiting, stomach cramps, fever, and dehydration in severe cases.",
+        "Treatment focuses on staying hydrated and resting. Severe cases may require rehydration solutions or medical attention.",
+        "Prevent gastroenteritis by practicing good hygiene, washing hands, avoiding contaminated food and water, and cooking food thoroughly."
+      ]
+    },
+    {
+      "tag": "gastro_oesophageal_reflux_disease",
+      "patterns": [
+        "What is GORD?",
+        "What causes GORD?",
+        "What are the symptoms of GORD?",
+        "How is GORD treated?",
+        "Can GORD be prevented?"
+      ],
+      "responses": [
+        "GORD, or gastro-oesophageal reflux disease, occurs when stomach acid frequently flows back into the esophagus, causing irritation.",
+        "Common causes include a weak lower esophageal sphincter, obesity, smoking, or certain foods like spicy or fatty meals.",
+        "Symptoms include heartburn, regurgitation, chest pain, and difficulty swallowing. Chronic GORD can lead to complications like Barrett's esophagus.",
+        "Treatment options include lifestyle changes, antacids, acid blockers, or surgery for severe cases.",
+        "Prevent GORD by maintaining a healthy weight, avoiding trigger foods, eating smaller meals, and not lying down after eating."
+      ]
+    },
+    {
+      "tag": "haemorrhoids",
+      "patterns": [
+        "What are haemorrhoids?",
+        "What causes haemorrhoids?",
+        "What are the symptoms of haemorrhoids?",
+        "How are haemorrhoids treated?",
+        "Can haemorrhoids be prevented?"
+      ],
+      "responses": [
+        "Haemorrhoids, also known as piles, are swollen veins in the rectum or anus that can cause discomfort or bleeding.",
+        "Common causes of haemorrhoids include straining during bowel movements, chronic constipation, pregnancy, and prolonged sitting.",
+        "Symptoms include itching, pain, bleeding during bowel movements, and swelling around the anus.",
+        "Treatment options range from lifestyle changes like increasing fiber intake to over-the-counter creams, and in severe cases, medical procedures such as rubber band ligation or surgery.",
+        "Prevent haemorrhoids by eating a high-fiber diet, drinking plenty of water, and avoiding prolonged sitting or straining during bowel movements."
+      ]
+    },
+    {
+      "tag": "hand_foot_mouth_disease",
+      "patterns": [
+        "What is hand, foot and mouth disease?",
+        "What causes hand, foot and mouth disease?",
+        "What are the symptoms of hand, foot and mouth disease?",
+        "How is hand, foot and mouth disease treated?",
+        "Is hand, foot and mouth disease contagious?"
+      ],
+      "responses": [
+        "Hand, foot and mouth disease is a common viral infection that usually affects children under 5 years old.",
+        "It is caused by viruses from the enterovirus group, such as coxsackievirus, and spreads through close contact with an infected person.",
+        "Symptoms include fever, sore throat, and a rash or blisters on the hands, feet, and inside the mouth.",
+        "Treatment focuses on relieving symptoms, including using pain relievers, staying hydrated, and avoiding spicy or acidic foods.",
+        "Yes, it is contagious and spreads through respiratory droplets, saliva, or contact with contaminated surfaces."
+      ]
+    },
+    {
+      "tag": "hay_fever",
+      "patterns": [
+        "What is hay fever?",
+        "What causes hay fever?",
+        "What are the symptoms of hay fever?",
+        "How is hay fever treated?",
+        "Can hay fever be prevented?"
+      ],
+      "responses": [
+        "Hay fever, or allergic rhinitis, is an allergic reaction to pollen, dust, or mold spores.",
+        "It is caused by the immune system reacting to allergens like pollen, leading to symptoms.",
+        "Symptoms include sneezing, a runny or blocked nose, itchy eyes, and throat irritation.",
+        "Treatment options include antihistamines, nasal sprays, and avoiding allergens as much as possible.",
+        "Prevent hay fever by staying indoors on high pollen days, using air purifiers, and washing hands and face after being outside."
+      ]
+    },
+    {
+      "tag": "head_neck_cancer",
+      "patterns": [
+        "What is head and neck cancer?",
+        "What causes head and neck cancer?",
+        "What are the symptoms of head and neck cancer?",
+        "How is head and neck cancer treated?",
+        "Is head and neck cancer preventable?"
+      ],
+      "responses": [
+        "Head and neck cancer refers to cancers that develop in the mouth, throat, larynx, or sinuses.",
+        "Risk factors include tobacco use, alcohol consumption, HPV infection, and prolonged exposure to harmful chemicals.",
+        "Symptoms include persistent sore throat, difficulty swallowing, hoarseness, unexplained weight loss, and lumps in the neck.",
+        "Treatment depends on the stage and location and may include surgery, radiation therapy, and chemotherapy.",
+        "Reduce your risk by avoiding tobacco, limiting alcohol, and getting vaccinated against HPV."
+      ]
+    },
+    {
+      "tag": "heart_attack",
+      "patterns": [
+        "What is a heart attack?",
+        "What causes a heart attack?",
+        "What are the symptoms of a heart attack?",
+        "How is a heart attack treated?",
+        "How can I prevent a heart attack?"
+      ],
+      "responses": [
+        "A heart attack occurs when blood flow to the heart is blocked, often due to a blood clot in the coronary arteries.",
+        "Causes include atherosclerosis (plaque buildup), high blood pressure, high cholesterol, smoking, and obesity.",
+        "Symptoms include chest pain, shortness of breath, nausea, sweating, and pain radiating to the arms or jaw.",
+        "Immediate treatment includes medication, angioplasty, or bypass surgery to restore blood flow to the heart.",
+        "Prevent heart attacks by maintaining a healthy diet, exercising regularly, managing stress, and avoiding smoking."
+      ]
+    },
+    {
+      "tag": "heart_block",
+      "patterns": [
+        "What is heart block?",
+        "What causes heart block?",
+        "What are the symptoms of heart block?",
+        "How is heart block treated?",
+        "Is heart block dangerous?"
+      ],
+      "responses": [
+        "Heart block occurs when the electrical signals in the heart are delayed or blocked, affecting its rhythm.",
+        "It can be caused by heart disease, medications, or congenital conditions.",
+        "Symptoms range from none (in mild cases) to fatigue, dizziness, fainting, and slow heart rate.",
+        "Treatment may involve a pacemaker to regulate the heartbeat or medication adjustments.",
+        "While mild heart block may not be dangerous, severe cases require prompt treatment to prevent complications."
+      ]
+    },
+    {
+      "tag": "hiv",
+      "patterns": [
+        "What is HIV?",
+        "How is HIV transmitted?",
+        "What are the symptoms of HIV?",
+        "How is HIV treated?",
+        "Can HIV be prevented?"
+      ],
+      "responses": [
+        "HIV (human immunodeficiency virus) attacks the immune system, weakening the body's ability to fight infections.",
+        "It is transmitted through contact with infected blood, semen, vaginal fluids, or breast milk.",
+        "Symptoms include flu-like illness, swollen lymph nodes, weight loss, and opportunistic infections as the disease progresses.",
+        "HIV is treated with antiretroviral therapy (ART), which helps control the virus and boosts the immune system.",
+        "Prevent HIV by practicing safe sex, using clean needles, and taking preventive medications like PrEP if at high risk."
+      ]
+    },
+    {
+      "tag": "insomnia",
+      "patterns": [
+        "What is insomnia?",
+        "What causes insomnia?",
+        "How can insomnia be treated?",
+        "What are the symptoms of insomnia?",
+        "Can insomnia be prevented?"
+      ],
+      "responses": [
+        "Insomnia is a sleep disorder where individuals have difficulty falling asleep, staying asleep, or waking up too early.",
+        "Causes include stress, anxiety, depression, poor sleep habits, medications, or underlying health conditions.",
+        "Treatment includes improving sleep hygiene, cognitive behavioral therapy for insomnia (CBT-I), and sometimes short-term use of sleep aids.",
+        "Symptoms include trouble falling asleep, frequent nighttime awakenings, fatigue, and irritability during the day.",
+        "Prevent insomnia by maintaining a regular sleep schedule, avoiding caffeine and screens before bed, and managing stress effectively."
+      ]
+    },
+    {
+      "tag": "itchy_skin",
+      "patterns": [
+        "What causes itchy skin?",
+        "How can I treat itchy skin?",
+        "Is itchy skin a sign of an allergy?",
+        "Can itchy skin be prevented?",
+        "What are common conditions that cause itchy skin?"
+      ],
+      "responses": [
+        "Itchy skin can be caused by dry skin, allergies, insect bites, eczema, or underlying conditions like liver or kidney disease.",
+        "Treatment includes moisturizing, using antihistamines, applying topical creams, or addressing the underlying cause.",
+        "Yes, itchy skin can be a symptom of an allergic reaction to foods, medications, or environmental factors.",
+        "Prevent itchy skin by keeping your skin moisturized, avoiding irritants, and using mild soaps or detergents.",
+        "Common conditions causing itchy skin include dermatitis, psoriasis, scabies, and hives. Consult a dermatologist if the itch persists."
+      ]
+    },
+    {
+      "tag": "kidney_cancer",
+      "patterns": [
+        "What is kidney cancer?",
+        "What causes kidney cancer?",
+        "What are the symptoms of kidney cancer?",
+        "How is kidney cancer treated?",
+        "Can kidney cancer be prevented?"
+      ],
+      "responses": [
+        "Kidney cancer is a type of cancer that begins in the kidneys, with renal cell carcinoma being the most common type.",
+        "Risk factors include smoking, obesity, high blood pressure, and family history of kidney cancer.",
+        "Symptoms include blood in the urine, lower back pain, unexplained weight loss, and fatigue.",
+        "Treatment options include surgery (partial or full nephrectomy), targeted therapy, immunotherapy, and sometimes radiation.",
+        "Reduce your risk by maintaining a healthy weight, avoiding smoking, managing blood pressure, and eating a balanced diet."
+      ]
+    },
+    {
+      "tag": "kidney_infection",
+      "patterns": [
+        "What is a kidney infection?",
+        "What causes kidney infections?",
+        "What are the symptoms of kidney infections?",
+        "How is a kidney infection treated?",
+        "Can kidney infections be prevented?"
+      ],
+      "responses": [
+        "A kidney infection is a type of urinary tract infection (UTI) that spreads to one or both kidneys.",
+        "It is usually caused by bacteria entering the urinary tract and traveling to the kidneys.",
+        "Symptoms include fever, back or side pain, frequent urination, pain during urination, and cloudy or foul-smelling urine.",
+        "Treatment typically involves antibiotics and plenty of fluids. Severe cases may require hospitalization for intravenous antibiotics.",
+        "Prevent kidney infections by staying hydrated, urinating after sexual activity, and treating UTIs promptly."
+      ]
+    },
+    {
+      "tag": "kidney_stones",
+      "patterns": [
+        "What are kidney stones?",
+        "What causes kidney stones?",
+        "What are the symptoms of kidney stones?",
+        "How are kidney stones treated?",
+        "Can kidney stones be prevented?"
+      ],
+      "responses": [
+        "Kidney stones are hard deposits of minerals and salts that form in the kidneys and can cause pain when passing through the urinary tract.",
+        "Causes include dehydration, high salt or protein intake, obesity, and certain medical conditions or medications.",
+        "Symptoms include severe pain in the back or side, blood in urine, nausea, vomiting, and frequent urination.",
+        "Treatment options include pain management, drinking plenty of fluids, medications to help pass the stones, and in some cases, surgical removal.",
+        "Prevent kidney stones by drinking plenty of water, reducing salt and animal protein intake, and managing underlying conditions like gout."
+      ]
+    },
+    {
+      "tag": "liver_cancer",
+      "patterns": [
+        "What is liver cancer?",
+        "What causes liver cancer?",
+        "What are the symptoms of liver cancer?",
+        "How is liver cancer treated?",
+        "Can liver cancer be prevented?"
+      ],
+      "responses": [
+        "Liver cancer is a type of cancer that starts in the liver cells, with hepatocellular carcinoma being the most common type.",
+        "Causes include chronic hepatitis B or C infection, heavy alcohol use, fatty liver disease, and exposure to aflatoxins.",
+        "Symptoms include jaundice, weight loss, abdominal pain, fatigue, and swelling in the abdomen.",
+        "Treatment options include surgery, liver transplant, targeted therapy, immunotherapy, and radiation therapy.",
+        "Prevent liver cancer by avoiding alcohol abuse, getting vaccinated for hepatitis B, and managing conditions like hepatitis C or obesity."
+      ]
+    },
+    {
+      "tag": "liver_tumors",
+      "patterns": [
+        "What are liver tumors?",
+        "Are liver tumors always cancerous?",
+        "What causes liver tumors?",
+        "How are liver tumors treated?",
+        "What are the symptoms of liver tumors?"
+      ],
+      "responses": [
+        "Liver tumors are abnormal growths in the liver, which can be benign (non-cancerous) or malignant (cancerous).",
+        "Not all liver tumors are cancerous. Benign tumors include hemangiomas, adenomas, and focal nodular hyperplasia.",
+        "Causes vary and may include genetic factors, chronic liver disease, or hormonal imbalances.",
+        "Treatment depends on the type of tumor and may involve surgery, monitoring, or medication.",
+        "Symptoms, if present, can include abdominal discomfort, bloating, or signs of liver dysfunction."
+      ]
+    },
+    {
+      "tag": "lung_cancer",
+      "patterns": [
+        "What is lung cancer?",
+        "What causes lung cancer?",
+        "What are the symptoms of lung cancer?",
+        "How is lung cancer treated?",
+        "Can lung cancer be prevented?"
+      ],
+      "responses": [
+        "Lung cancer is a type of cancer that starts in the lungs and is one of the leading causes of cancer-related deaths worldwide.",
+        "Causes include smoking, exposure to secondhand smoke, radon gas, asbestos, and genetic factors.",
+        "Symptoms include persistent cough, chest pain, shortness of breath, coughing up blood, and unexplained weight loss.",
+        "Treatment options include surgery, chemotherapy, radiation therapy, targeted therapy, and immunotherapy depending on the stage of the cancer.",
+        "Prevent lung cancer by avoiding smoking, minimizing exposure to harmful substances, and getting regular health check-ups."
+      ]
+    },
+    {
+      "tag": "malaria",
+      "patterns": [
+        "What is malaria?",
+        "What causes malaria?",
+        "What are the symptoms of malaria?",
+        "How is malaria treated?",
+        "Can malaria be prevented?"
+      ],
+      "responses": [
+        "Malaria is a mosquito-borne disease caused by Plasmodium parasites, common in tropical and subtropical regions.",
+        "Malaria is transmitted through the bite of infected Anopheles mosquitoes.",
+        "Symptoms include fever, chills, headache, nausea, vomiting, and muscle pain. Severe cases can lead to organ damage or death.",
+        "Treatment involves antimalarial medications such as artemisinin-based combination therapies (ACTs) or chloroquine, depending on the type of malaria.",
+        "Prevent malaria by using mosquito nets, insect repellents, and antimalarial prophylaxis if traveling to endemic areas."
+      ]
+    },
+    {
+      "tag": "malignant_brain_tumour",
+      "patterns": [
+        "What is a malignant brain tumour?",
+        "What causes cancerous brain tumours?",
+        "What are the symptoms of malignant brain tumours?",
+        "How are malignant brain tumours treated?",
+        "Can malignant brain tumours be cured?"
+      ],
+      "responses": [
+        "A malignant brain tumour is a cancerous growth in the brain that can spread to other parts of the body.",
+        "The causes include genetic mutations, exposure to radiation, or other unknown factors. Some risk factors are not well understood.",
+        "Symptoms include headaches, seizures, memory loss, nausea, and difficulty with speech, vision, or balance.",
+        "Treatment options include surgery, radiation therapy, chemotherapy, and targeted therapies, depending on the type and location of the tumour.",
+        "Some malignant brain tumours can be treated effectively, but the prognosis depends on the tumour's type, size, and stage."
+      ]
+    },
+    {
+      "tag": "motor_neurone_disease",
+      "patterns": [
+        "What is motor neurone disease?",
+        "What causes motor neurone disease?",
+        "What are the symptoms of motor neurone disease?",
+        "How is motor neurone disease treated?",
+        "Is there a cure for motor neurone disease?"
+      ],
+      "responses": [
+        "Motor neurone disease (MND) is a rare condition that affects the nerves controlling muscles, leading to weakness and degeneration.",
+        "The exact cause of MND is unknown, but genetic and environmental factors may play a role.",
+        "Symptoms include muscle weakness, difficulty speaking or swallowing, and problems with mobility. Symptoms worsen over time.",
+        "Treatment focuses on managing symptoms, including physiotherapy, medications like riluzole, and assistive devices to improve quality of life.",
+        "There is no cure for MND, but ongoing research aims to develop new treatments to slow disease progression."
+      ]
+    },
+    {
+      "tag": "mouth_cancer",
+      "patterns": [
+        "What is mouth cancer?",
+        "What causes mouth cancer?",
+        "What are the symptoms of mouth cancer?",
+        "How is mouth cancer treated?",
+        "Can mouth cancer be prevented?"
+      ],
+      "responses": [
+        "Mouth cancer is a type of cancer that develops in the tissues of the mouth, including the lips, tongue, and cheeks.",
+        "Risk factors include smoking, heavy alcohol use, HPV infection, and excessive sun exposure to the lips.",
+        "Symptoms include mouth sores that don't heal, lumps, white or red patches, difficulty chewing or swallowing, and persistent pain.",
+        "Treatment options include surgery, radiation therapy, chemotherapy, or targeted therapy, depending on the stage and location.",
+        "Prevent mouth cancer by avoiding tobacco, limiting alcohol, protecting lips from the sun, and getting vaccinated for HPV."
+      ]
+    },
+    {
+      "tag": "nasal_and_sinus_cancer",
+      "patterns": [
+        "What is nasal and sinus cancer?",
+        "What causes nasal and sinus cancer?",
+        "What are the symptoms of nasal and sinus cancer?",
+        "How is nasal and sinus cancer treated?",
+        "Is nasal and sinus cancer common?"
+      ],
+      "responses": [
+        "Nasal and sinus cancer is a rare type of cancer that develops in the nasal cavity or sinuses.",
+        "The exact causes are unclear, but risk factors include exposure to certain chemicals, smoking, and HPV infection.",
+        "Symptoms include persistent nasal congestion, nosebleeds, facial pain or swelling, and difficulty breathing through the nose.",
+        "Treatment options include surgery, radiation therapy, and chemotherapy, depending on the size and spread of the tumor.",
+        "Although rare, early diagnosis and treatment can improve outcomes. If you notice persistent symptoms, consult a specialist."
+      ]
+    },
+    {
+      "tag": "nosebleed",
+      "patterns": [
+        "What causes a nosebleed?",
+        "How can I stop a nosebleed?",
+        "Are nosebleeds serious?",
+        "What are the common triggers for nosebleeds?",
+        "When should I see a doctor for a nosebleed?"
+      ],
+      "responses": [
+        "Nosebleeds, or epistaxis, can be caused by dry air, nose picking, allergies, infections, or trauma to the nose.",
+        "To stop a nosebleed, lean forward slightly, pinch your nostrils together, and breathe through your mouth for 5-10 minutes.",
+        "Most nosebleeds are not serious and can be treated at home, but frequent or heavy nosebleeds may require medical attention.",
+        "Common triggers include dry climates, high altitudes, or using blood-thinning medications.",
+        "Seek medical care if the bleeding lasts longer than 20 minutes, is very heavy, or is caused by an injury."
+      ]
+    },
+    {
+      "tag": "oesophageal_cancer",
+      "patterns": [
+        "What is oesophageal cancer?",
+        "What causes oesophageal cancer?",
+        "What are the symptoms of oesophageal cancer?",
+        "How is oesophageal cancer treated?",
+        "Is oesophageal cancer common?"
+      ],
+      "responses": [
+        "Oesophageal cancer is a type of cancer that develops in the oesophagus, the tube connecting your throat to your stomach.",
+        "Risk factors include smoking, heavy alcohol consumption, chronic acid reflux, obesity, and certain dietary habits.",
+        "Symptoms include difficulty swallowing, chest pain, weight loss, persistent cough, and hoarseness.",
+        "Treatment depends on the stage and may involve surgery, chemotherapy, radiation therapy, or a combination of these.",
+        "Early detection improves outcomes. If you experience persistent symptoms, consult a healthcare provider for evaluation."
+      ]
+    },
+    {
+      "tag": "osteosarcoma",
+      "patterns": [
+        "What is osteosarcoma?",
+        "What causes osteosarcoma?",
+        "What are the symptoms of osteosarcoma?",
+        "How is osteosarcoma treated?",
+        "Is osteosarcoma common in children?"
+      ],
+      "responses": [
+        "Osteosarcoma is a type of bone cancer that usually develops in the long bones, such as those in the arms or legs.",
+        "The exact cause is unknown, but it is linked to genetic factors, rapid bone growth, and previous radiation exposure.",
+        "Symptoms include bone pain, swelling, and a lump near the affected bone, as well as fractures caused by weakened bones.",
+        "Treatment often includes surgery to remove the tumor and chemotherapy to target cancer cells.",
+        "Osteosarcoma is more common in teenagers and young adults during growth spurts but can occur at any age."
+      ]
+    },
+    {
+      "tag": "pagets_disease_of_the_nipple",
+      "patterns": [
+        "What is Paget’s disease of the nipple?",
+        "What causes Paget’s disease of the nipple?",
+        "What are the symptoms of Paget’s disease of the nipple?",
+        "How is Paget’s disease of the nipple treated?",
+        "Is Paget’s disease of the nipple a form of cancer?"
+      ],
+      "responses": [
+        "Paget’s disease of the nipple is a rare type of breast cancer that affects the skin of the nipple and areola.",
+        "The exact cause is unknown, but it is often associated with underlying ductal breast cancer.",
+        "Symptoms include redness, flaking, itching, discharge, or a lump in the breast.",
+        "Treatment typically involves surgery, such as a mastectomy, and may include radiation or chemotherapy if necessary.",
+        "Yes, Paget’s disease of the nipple is a form of cancer, so early diagnosis and treatment are crucial."
+      ]
+    },
+    {
+      "tag": "pancreatic_cancer",
+      "patterns": [
+        "What is pancreatic cancer?",
+        "What causes pancreatic cancer?",
+        "What are the symptoms of pancreatic cancer?",
+        "How is pancreatic cancer treated?",
+        "Is pancreatic cancer hereditary?"
+      ],
+      "responses": [
+        "Pancreatic cancer is a type of cancer that starts in the pancreas, an organ involved in digestion and blood sugar regulation.",
+        "Risk factors include smoking, obesity, chronic pancreatitis, diabetes, and a family history of pancreatic cancer.",
+        "Symptoms can include jaundice, abdominal pain, weight loss, loss of appetite, and changes in stool.",
+        "Treatment depends on the stage and may involve surgery, chemotherapy, radiation therapy, or targeted therapy.",
+        "Some cases of pancreatic cancer are hereditary, linked to genetic mutations. Genetic counseling may help assess the risk."
+      ]
+    },
+    {
+      "tag": "parkinsons_disease",
+      "patterns": [
+        "What is Parkinson’s disease?",
+        "What causes Parkinson’s disease?",
+        "What are the symptoms of Parkinson’s disease?",
+        "How is Parkinson’s disease treated?",
+        "Can Parkinson’s disease be cured?"
+      ],
+      "responses": [
+        "Parkinson’s disease is a progressive neurological disorder that affects movement and coordination.",
+        "The exact cause is unknown, but it involves the loss of dopamine-producing brain cells. Genetics and environmental factors may contribute.",
+        "Symptoms include tremors, stiffness, slow movement, balance problems, and difficulty speaking or writing.",
+        "Treatment focuses on managing symptoms with medications, physical therapy, and in some cases, deep brain stimulation.",
+        "There is no cure for Parkinson’s disease, but treatments can help improve quality of life and manage symptoms."
+      ]
+    },
+    {
+      "tag": "pelvic_inflammatory_disease",
+      "patterns": [
+        "What is pelvic inflammatory disease?",
+        "What causes pelvic inflammatory disease?",
+        "What are the symptoms of pelvic inflammatory disease?",
+        "How is pelvic inflammatory disease treated?",
+        "Can pelvic inflammatory disease cause infertility?"
+      ],
+      "responses": [
+        "Pelvic inflammatory disease (PID) is an infection of the female reproductive organs, often caused by sexually transmitted infections.",
+        "It is commonly caused by bacteria, such as those responsible for chlamydia and gonorrhea, spreading to the uterus, fallopian tubes, or ovaries.",
+        "Symptoms include pelvic pain, abnormal vaginal discharge, fever, painful intercourse, and irregular menstrual bleeding.",
+        "Treatment typically involves antibiotics to eliminate the infection. Severe cases may require hospitalization or surgery.",
+        "If left untreated, PID can lead to infertility or chronic pelvic pain. Early treatment is essential to prevent complications."
+      ]
+    },
+    {
+      "tag": "raynauds_phenomenon",
+      "patterns": [
+        "What is Raynaud’s phenomenon?",
+        "What causes Raynaud’s phenomenon?",
+        "What are the symptoms of Raynaud’s phenomenon?",
+        "How is Raynaud’s phenomenon treated?",
+        "Is Raynaud’s phenomenon dangerous?"
+      ],
+      "responses": [
+        "Raynaud’s phenomenon is a condition where blood flow to the fingers, toes, or other areas is temporarily reduced, often in response to cold or stress.",
+        "It is caused by overreactive blood vessels, often triggered by cold temperatures or emotional stress. It may be associated with other health conditions.",
+        "Symptoms include cold fingers or toes, color changes (white, blue, red), numbness, and tingling in affected areas.",
+        "Treatment includes avoiding triggers, keeping warm, and medications like calcium channel blockers to improve blood flow.",
+        "Raynaud’s is usually not dangerous but may indicate an underlying condition. Severe cases can lead to ulcers or tissue damage."
+      ]
+    },
+    {
+      "tag": "rosacea",
+      "patterns": [
+        "What is rosacea?",
+        "What causes rosacea?",
+        "What are the symptoms of rosacea?",
+        "How is rosacea treated?",
+        "Can rosacea be cured?"
+      ],
+      "responses": [
+        "Rosacea is a chronic skin condition causing redness, flushing, and sometimes pimples or visible blood vessels, mainly on the face.",
+        "The exact cause is unknown, but triggers include sun exposure, stress, hot drinks, spicy foods, and alcohol.",
+        "Symptoms include facial redness, swelling, bumps, and sometimes eye irritation or a thickened skin texture.",
+        "Treatment involves managing triggers, using prescribed topical or oral medications, and laser therapy for severe cases.",
+        "There is no cure for rosacea, but treatments can help manage symptoms and prevent flare-ups."
+      ]
+    },
+    {
+      "tag": "ringworm_and_fungal_infections",
+      "patterns": [
+        "What is ringworm?",
+        "What causes fungal infections?",
+        "What are the symptoms of ringworm?",
+        "How are fungal infections treated?",
+        "Can ringworm spread to others?"
+      ],
+      "responses": [
+        "Ringworm is a common fungal infection of the skin, causing a red, circular rash with clear skin in the center.",
+        "Fungal infections are caused by dermatophytes or yeast, thriving in warm, moist environments. Poor hygiene and sharing personal items can increase risk.",
+        "Symptoms of ringworm include itchy, scaly patches of skin that may form rings. Fungal infections in nails may cause thickening and discoloration.",
+        "Treatment includes antifungal creams, oral medications for severe cases, and good hygiene practices to prevent recurrence.",
+        "Yes, ringworm is contagious and can spread through direct contact with an infected person, animal, or contaminated surface."
+      ]
+    },
+    {
+      "tag": "respiratory_syncytial_virus",
+      "patterns": [
+        "What is RSV?",
+        "What causes respiratory syncytial virus?",
+        "What are the symptoms of RSV?",
+        "How is RSV treated?",
+        "Can RSV be prevented?"
+      ],
+      "responses": [
+        "Respiratory syncytial virus (RSV) is a common virus that affects the respiratory tract, especially in young children and infants.",
+        "It is caused by a highly contagious virus that spreads through respiratory droplets, direct contact, or surfaces.",
+        "Symptoms include coughing, runny nose, fever, wheezing, and difficulty breathing. Severe cases can lead to pneumonia or bronchiolitis.",
+        "Treatment focuses on supportive care, such as hydration, suctioning mucus, and oxygen therapy if needed. Severe cases may require hospitalization.",
+        "Preventive measures include frequent handwashing, avoiding close contact with sick individuals, and keeping infants away from crowded areas during RSV season."
+      ]
+    },
+    {
+      "tag": "shortness_of_breath",
+      "patterns": [
+        "What causes shortness of breath?",
+        "Why do I feel out of breath?",
+        "Is shortness of breath serious?",
+        "How is shortness of breath treated?",
+        "Can shortness of breath be a sign of a heart problem?"
+      ],
+      "responses": [
+        "Shortness of breath can be caused by conditions like asthma, heart disease, anemia, lung infections, or anxiety. Consult a doctor for evaluation.",
+        "Feeling out of breath can result from physical exertion, respiratory issues, or medical conditions such as COPD or heart failure.",
+        "Shortness of breath can be serious, especially if it occurs suddenly, worsens, or is accompanied by chest pain. Seek immediate medical attention in such cases.",
+        "Treatment depends on the underlying cause and may include medication, oxygen therapy, or lifestyle changes. A healthcare provider can guide you further.",
+        "Yes, shortness of breath can indicate a heart issue, such as heart failure or a heart attack. It's important to have it evaluated if persistent or severe."
+      ]
+    },
+    {
+      "tag": "sickle_cell_disease",
+      "patterns": [
+        "What is sickle cell disease?",
+        "What causes sickle cell disease?",
+        "What are the symptoms of sickle cell disease?",
+        "How is sickle cell disease treated?",
+        "Can sickle cell disease be cured?"
+      ],
+      "responses": [
+        "Sickle cell disease is a genetic blood disorder where red blood cells take on a crescent shape, causing blockages and reduced oxygen delivery.",
+        "It is caused by a mutation in the hemoglobin gene, inherited from both parents.",
+        "Symptoms include anemia, pain crises, fatigue, swelling in hands and feet, and increased risk of infections.",
+        "Treatment includes medications like hydroxyurea, pain management, blood transfusions, and preventive care. Bone marrow transplants may be a potential cure in some cases.",
+        "A cure is possible with a bone marrow transplant, but it is not suitable for everyone. Consult a specialist for detailed advice."
+      ]
+    },
+    {
+      "tag": "skin_cancer_melanoma",
+      "patterns": [
+        "What is melanoma?",
+        "What causes melanoma?",
+        "What are the symptoms of melanoma?",
+        "How is melanoma treated?",
+        "Is melanoma life-threatening?"
+      ],
+      "responses": [
+        "Melanoma is a serious type of skin cancer that develops in pigment-producing cells called melanocytes.",
+        "It is caused by DNA damage due to UV radiation from the sun or tanning beds, combined with genetic factors.",
+        "Symptoms include a new or changing mole, asymmetry, irregular borders, multiple colors, or a mole larger than 6mm.",
+        "Treatment depends on the stage and may involve surgery, immunotherapy, targeted therapy, radiation, or chemotherapy.",
+        "Melanoma can be life-threatening if not detected early, but early diagnosis and treatment greatly improve outcomes."
+      ]
+    },
+    {
+      "tag": "skin_cancer_non_melanoma",
+      "patterns": [
+        "What is non-melanoma skin cancer?",
+        "What causes non-melanoma skin cancer?",
+        "What are the symptoms of non-melanoma skin cancer?",
+        "How is non-melanoma skin cancer treated?",
+        "Is non-melanoma skin cancer dangerous?"
+      ],
+      "responses": [
+        "Non-melanoma skin cancer refers to common skin cancers like basal cell carcinoma and squamous cell carcinoma.",
+        "It is primarily caused by prolonged exposure to UV radiation, as well as factors like weakened immunity and family history.",
+        "Symptoms include slow-growing lumps, scaly patches, or sores that do not heal, especially in sun-exposed areas.",
+        "Treatment usually involves surgery, cryotherapy, topical medications, or radiation therapy, depending on the size and location.",
+        "While non-melanoma skin cancer is usually not life-threatening, early treatment is important to prevent complications."
+      ]
+    },
+    {
+      "tag": "skin_rashes_children",
+      "patterns": [
+        "What causes skin rashes in children?",
+        "Why does my child have a rash?",
+        "What are common types of rashes in children?",
+        "How are skin rashes treated in children?",
+        "Are rashes in children serious?"
+      ],
+      "responses": [
+        "Skin rashes in children can be caused by allergies, infections, heat, or conditions like eczema or chickenpox.",
+        "Common causes include diaper rash, viral infections, allergic reactions, or insect bites.",
+        "Common types of rashes include eczema, hives, measles, and hand, foot, and mouth disease.",
+        "Treatment depends on the cause and may include antihistamines, topical creams, or managing allergies. Consult a pediatrician for advice.",
+        "Most rashes are not serious, but seek medical attention if the rash is spreading quickly, accompanied by fever, or causing distress."
+      ]
+    },
+    {
+      "tag": "stomach_cancer",
+      "patterns": [
+        "What is stomach cancer?",
+        "What causes stomach cancer?",
+        "What are the symptoms of stomach cancer?",
+        "How is stomach cancer treated?",
+        "Can stomach cancer be cured?"
+      ],
+      "responses": [
+        "Stomach cancer, or gastric cancer, develops in the lining of the stomach and can spread to other parts of the body.",
+        "It is linked to factors like Helicobacter pylori infection, smoking, diet, family history, and certain genetic conditions.",
+        "Symptoms include indigestion, stomach pain, weight loss, nausea, vomiting, and feeling full after small meals.",
+        "Treatment options include surgery, chemotherapy, radiation therapy, targeted therapy, or immunotherapy, depending on the stage.",
+        "Stomach cancer is curable if detected early, but advanced cases can be challenging to treat effectively."
+      ]
+    },
+    {
+      "tag": "stroke",
+      "patterns": [
+        "What is a stroke?",
+        "What causes a stroke?",
+        "What are the symptoms of a stroke?",
+        "How is a stroke treated?",
+        "Can a stroke be prevented?"
+      ],
+      "responses": [
+        "A stroke occurs when blood flow to the brain is interrupted, leading to brain cell damage. It can be ischemic (blocked artery) or hemorrhagic (bleeding).",
+        "Causes include high blood pressure, smoking, heart disease, diabetes, and high cholesterol.",
+        "Symptoms include sudden numbness or weakness, difficulty speaking, loss of balance, vision problems, and severe headache.",
+        "Treatment depends on the type and may involve clot-busting drugs, surgery, or rehabilitation. Quick treatment is crucial to minimize damage.",
+        "Stroke prevention includes managing risk factors like blood pressure, a healthy diet, regular exercise, and avoiding smoking."
+      ]
+    },
+    {
+      "tag": "tennis_elbow",
+      "patterns": [
+        "What is tennis elbow?",
+        "What causes tennis elbow?",
+        "What are the symptoms of tennis elbow?",
+        "How is tennis elbow treated?",
+        "Can tennis elbow heal on its own?"
+      ],
+      "responses": [
+        "Tennis elbow, or lateral epicondylitis, is a condition caused by overuse of the forearm muscles, leading to pain around the elbow.",
+        "It is often caused by repetitive motions, such as playing tennis, typing, or manual labor that strains the elbow tendons.",
+        "Symptoms include pain and tenderness around the outer elbow, difficulty gripping objects, and reduced forearm strength.",
+        "Treatment includes rest, physical therapy, anti-inflammatory medications, braces, or injections. Severe cases may require surgery.",
+        "Tennis elbow can heal on its own with rest and proper care, but recovery may take weeks to months. Consult a doctor if symptoms persist."
+      ]
+    },
+    {
+      "tag": "testicular_cancer",
+      "patterns": [
+        "What is testicular cancer?",
+        "What causes testicular cancer?",
+        "What are the symptoms of testicular cancer?",
+        "How is testicular cancer treated?",
+        "Can testicular cancer be cured?"
+      ],
+      "responses": [
+        "Testicular cancer occurs in the testicles, which are part of the male reproductive system. It's most common in young men.",
+        "The exact cause is unknown, but risk factors include undescended testicles, family history, and certain genetic conditions.",
+        "Symptoms include a lump or swelling in the testicle, heaviness in the scrotum, or dull pain in the groin or abdomen.",
+        "Treatment options include surgery, radiation therapy, chemotherapy, or a combination, depending on the stage and type.",
+        "Testicular cancer is highly treatable, especially when detected early. Regular self-examinations are important for early detection."
+      ]
+    },
+    {
+      "tag": "thyroid_cancer",
+      "patterns": [
+        "What is thyroid cancer?",
+        "What causes thyroid cancer?",
+        "What are the symptoms of thyroid cancer?",
+        "How is thyroid cancer treated?",
+        "Is thyroid cancer curable?"
+      ],
+      "responses": [
+        "Thyroid cancer develops in the thyroid gland, located in the neck. It is often highly treatable.",
+        "The exact cause is unknown, but risk factors include radiation exposure, genetic mutations, and family history of thyroid conditions.",
+        "Symptoms include a lump in the neck, hoarseness, difficulty swallowing, or swollen lymph nodes. Some cases may be asymptomatic.",
+        "Treatment options include surgery, radioactive iodine therapy, thyroid hormone therapy, and sometimes chemotherapy or radiation.",
+        "Thyroid cancer is often curable, especially when detected early. Regular checkups can help with early detection and successful treatment."
+      ]
+    },
+    {
+      "tag": "underactive_thyroid",
+      "patterns": [
+        "What is hypothyroidism?",
+        "What causes an underactive thyroid?",
+        "What are the symptoms of hypothyroidism?",
+        "How is hypothyroidism treated?",
+        "Can hypothyroidism lead to other health issues?"
+      ],
+      "responses": [
+        "Hypothyroidism, or an underactive thyroid, occurs when the thyroid gland doesn't produce enough hormones to meet the body's needs.",
+        "Common causes include Hashimoto's thyroiditis, iodine deficiency, certain medications, or thyroid surgery.",
+        "Symptoms include fatigue, weight gain, cold sensitivity, dry skin, hair thinning, and depression. Consult a doctor if you notice these signs.",
+        "Treatment involves daily thyroid hormone replacement therapy, such as levothyroxine, to restore normal hormone levels.",
+        "If left untreated, hypothyroidism can lead to complications like heart disease, infertility, and myxedema, a severe form of the condition."
+      ]
+    },
+    {
+      "tag": "urinary_incontinence",
+      "patterns": [
+        "What is urinary incontinence?",
+        "What causes urinary incontinence?",
+        "How is urinary incontinence treated?",
+        "Can urinary incontinence be prevented?",
+        "Is urinary incontinence common?"
+      ],
+      "responses": [
+        "Urinary incontinence is the loss of bladder control, resulting in unintentional leakage of urine.",
+        "It can be caused by weak pelvic muscles, nerve damage, infections, certain medications, or underlying conditions like diabetes.",
+        "Treatment options include pelvic floor exercises, bladder training, medications, medical devices, or surgery, depending on the severity.",
+        "Preventive measures include maintaining a healthy weight, avoiding bladder irritants like caffeine, and practicing pelvic floor exercises.",
+        "Urinary incontinence is a common condition, especially among older adults and women, but it can be managed effectively with medical care."
+      ]
+    },
+    {
+      "tag": "urinary_incontinence_in_women",
+      "patterns": [
+        "What causes urinary incontinence in women?",
+        "How is urinary incontinence treated in women?",
+        "Is urinary incontinence more common in women?",
+        "Can childbirth cause urinary incontinence?",
+        "How can women manage urinary incontinence?"
+      ],
+      "responses": [
+        "Urinary incontinence in women is often caused by pregnancy, childbirth, menopause, or weak pelvic floor muscles.",
+        "Treatment for women includes pelvic floor exercises, bladder training, medications, vaginal devices, or surgery for severe cases.",
+        "Yes, urinary incontinence is more common in women due to hormonal changes, childbirth, and anatomical differences.",
+        "Childbirth, particularly vaginal delivery, can weaken pelvic muscles and contribute to urinary incontinence.",
+        "Women can manage urinary incontinence by practicing pelvic floor exercises, using absorbent products, and consulting a doctor for tailored treatments."
+      ]
+    },
+    {
+      "tag": "urticaria_hives",
+      "patterns": [
+        "What is urticaria?",
+        "What causes hives?",
+        "How are hives treated?",
+        "Are hives contagious?",
+        "Can stress cause hives?"
+      ],
+      "responses": [
+        "Urticaria, or hives, is a skin condition characterized by red, itchy welts that can vary in size and appear anywhere on the body.",
+        "Hives can be caused by allergies, insect bites, certain foods, medications, infections, or stress.",
+        "Treatment includes antihistamines, avoiding triggers, and applying soothing lotions. Severe cases may require corticosteroids or epinephrine.",
+        "No, hives are not contagious. They are a reaction to triggers or an underlying condition.",
+        "Yes, stress can trigger hives by causing the release of histamine, leading to skin irritation and welts."
+      ]
+    },
+    {
+      "tag": "vaginal_cancer",
+      "patterns": [
+        "What is vaginal cancer?",
+        "What causes vaginal cancer?",
+        "What are the symptoms of vaginal cancer?",
+        "How is vaginal cancer treated?",
+        "Is vaginal cancer common?"
+      ],
+      "responses": [
+        "Vaginal cancer is a rare type of cancer that occurs in the vaginal tissues. Early detection is crucial for better outcomes.",
+        "Causes of vaginal cancer include human papillomavirus (HPV) infection, smoking, and a history of cervical cancer. Other factors may also play a role.",
+        "Symptoms of vaginal cancer include unusual vaginal bleeding, discharge, pain during intercourse, or a lump in the vagina. Consult a doctor if you notice these signs.",
+        "Treatment options for vaginal cancer include surgery, radiation therapy, and chemotherapy. The choice depends on the stage and type of cancer.",
+        "Vaginal cancer is rare, but routine gynecological exams can help detect it early."
+      ]
+    },
+    {
+      "tag": "vaginal_discharge",
+      "patterns": [
+        "What causes vaginal discharge?",
+        "Is vaginal discharge normal?",
+        "What does abnormal vaginal discharge look like?",
+        "How can vaginal discharge be treated?",
+        "When should I see a doctor for vaginal discharge?"
+      ],
+      "responses": [
+        "Vaginal discharge is normal and helps keep the vagina clean and healthy. It can vary in consistency and color throughout the menstrual cycle.",
+        "Normal discharge is clear or white and odorless. Changes in color, odor, or consistency can indicate an infection or other issue.",
+        "Abnormal vaginal discharge may be yellow, green, or gray, and may have a strong odor or be accompanied by itching or irritation.",
+        "Treatment for abnormal discharge depends on the cause. It may include antifungal medications, antibiotics, or other treatments prescribed by a doctor.",
+        "You should see a doctor if you notice unusual changes in vaginal discharge, pain, or other concerning symptoms."
+      ]
+    },
+    {
+      "tag": "vulval_cancer",
+      "patterns": [
+        "What is vulval cancer?",
+        "What are the symptoms of vulval cancer?",
+        "What causes vulval cancer?",
+        "How is vulval cancer treated?",
+        "Is vulval cancer preventable?"
+      ],
+      "responses": [
+        "Vulval cancer is a rare cancer that affects the external female genitalia, including the labia and clitoris.",
+        "Symptoms of vulval cancer include persistent itching, pain, changes in skin color, or a lump or sore that doesn’t heal.",
+        "Risk factors for vulval cancer include HPV infection, smoking, and a weakened immune system.",
+        "Treatment options include surgery to remove the cancer, radiation therapy, and chemotherapy, depending on the stage of the disease.",
+        "Practicing safe sex, avoiding smoking, and getting vaccinated against HPV can help reduce the risk of vulval cancer."
+      ]
+    },
+    {
+      "tag": "varicose_veins",
+      "patterns": [
+        "What are varicose veins?",
+        "What causes varicose veins?",
+        "How can I prevent varicose veins?",
+        "Are varicose veins dangerous?",
+        "How are varicose veins treated?"
+      ],
+      "responses": [
+        "Varicose veins are enlarged, twisted veins that often appear on the legs and feet due to poor blood flow.",
+        "They are caused by weakened valves in the veins, which allow blood to pool and veins to enlarge. Risk factors include age, pregnancy, and prolonged standing.",
+        "Preventing varicose veins involves regular exercise, maintaining a healthy weight, elevating your legs, and avoiding long periods of standing or sitting.",
+        "Varicose veins are usually not dangerous but can cause discomfort, swelling, or more serious complications like blood clots in some cases.",
+        "Treatment options include compression stockings, lifestyle changes, sclerotherapy, laser treatments, or surgery for severe cases."
+      ]
+    },
+    {
+      "tag": "wilms_tumor",
+      "patterns": [
+        "What is Wilms' tumor?",
+        "What causes Wilms' tumor?",
+        "What are the symptoms of Wilms' tumor?",
+        "How is Wilms' tumor treated?",
+        "Is Wilms' tumor common in children?"
+      ],
+      "responses": [
+        "Wilms' tumor is a rare kidney cancer that primarily affects children, usually under the age of 5.",
+        "The exact cause of Wilms' tumor is unclear, but genetic mutations and family history may play a role.",
+        "Symptoms of Wilms' tumor include abdominal swelling, a lump in the abdomen, blood in the urine, and fever. Consult a pediatric oncologist for evaluation.",
+        "Treatment for Wilms' tumor typically involves surgery to remove the tumor, followed by chemotherapy or radiation, depending on the stage.",
+        "Wilms' tumor is rare but is one of the most common cancers in young children. Early diagnosis can improve outcomes."
+      ]
+    },
+    {
+      "tag": "womb_cancer",
+      "patterns": [
+        "What is womb cancer?",
+        "What causes uterus cancer?",
+        "What are the symptoms of womb cancer?",
+        "How is uterus cancer treated?",
+        "Is womb cancer preventable?"
+      ],
+      "responses": [
+        "Womb (uterus) cancer, also known as endometrial cancer, is a type of cancer that begins in the lining of the uterus.",
+        "The exact cause of womb cancer is unclear, but risk factors include obesity, hormone imbalances, and a history of unopposed estrogen exposure.",
+        "Symptoms of womb cancer include abnormal vaginal bleeding, pelvic pain, and changes in menstrual cycles. It's important to consult a gynecologist if you experience these symptoms.",
+        "Treatment options for womb cancer include surgery (such as a hysterectomy), radiation therapy, and hormone therapy. Chemotherapy may also be used in advanced cases.",
+        "Maintaining a healthy weight, regular exercise, and managing hormonal risk factors may help reduce the risk of womb cancer."
+      ]
+    },
+    {
+      "tag": "yellow_fever",
+      "patterns": [
+        "What is yellow fever?",
+        "What causes yellow fever?",
+        "What are the symptoms of yellow fever?",
+        "How is yellow fever treated?",
+        "Can yellow fever be prevented?"
+      ],
+      "responses": [
+        "Yellow fever is a viral disease transmitted by mosquitoes, commonly found in tropical areas of Africa and South America.",
+        "Yellow fever is caused by the yellow fever virus, which is transmitted to humans through mosquito bites.",
+        "Symptoms of yellow fever include fever, chills, muscle pain, nausea, and in severe cases, liver damage leading to jaundice (yellowing of the skin).",
+        "There is no specific treatment for yellow fever, but supportive care can help manage symptoms. Severe cases may require hospitalization.",
+        "Yellow fever can be prevented with a highly effective vaccine. Avoiding mosquito bites by using repellents and nets also helps reduce the risk."
+      ]
+    },
+    {
+      "tag": "zika_virus",
+      "patterns": [
+        "What is Zika virus?",
+        "What causes Zika virus?",
+        "What are the symptoms of Zika virus?",
+        "How is Zika virus treated?",
+        "Can Zika virus cause birth defects?"
+      ],
+      "responses": [
+        "Zika virus is a mosquito-borne virus that can also spread through sexual contact or from a pregnant mother to her baby.",
+        "The Zika virus is primarily transmitted by Aedes mosquitoes, which are also responsible for spreading dengue and chikungunya.",
+        "Symptoms of Zika virus infection include fever, rash, joint pain, red eyes, and headache. Many people experience mild or no symptoms.",
+        "There is no specific treatment for Zika virus. Rest, hydration, and over-the-counter medications for pain and fever can help relieve symptoms.",
+        "Zika virus infection during pregnancy can cause severe birth defects, including microcephaly. Pregnant women should take precautions to avoid exposure to the virus."
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": ["Hello", "Hi", "How are you?"],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi! How can I assist you?"
+      ]
+    }
+  ]
+}
