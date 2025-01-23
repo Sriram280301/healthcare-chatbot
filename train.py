@@ -5,11 +5,10 @@ import random
 import pickle
 import os
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout
-from tensorflow.keras.optimizers import SGD
+from tensorflow.keras.layers import Dense, Dropout, LSTM, Bidirectional
+from tensorflow.keras.optimizers import Adam
 from nltk.stem import WordNetLemmatizer
 from sklearn.preprocessing import LabelEncoder
-
 
 # Ensure required directories exist
 MODEL_DIR = 'model'
@@ -93,14 +92,14 @@ train_y = np.array(list(training[:, 1]))
 # Build the model
 def build_model(input_shape, output_shape):
     model = Sequential([
-        Dense(128, input_shape=(input_shape,), activation='relu'),
+        Dense(256, input_shape=(input_shape,), activation='relu'),
         Dropout(0.5),
-        Dense(64, activation='relu'),
+        Dense(128, activation='relu'),
         Dropout(0.5),
         Dense(output_shape, activation='softmax')
     ])
     model.compile(
-        optimizer=SGD(learning_rate=0.01, momentum=0.9),
+        optimizer=Adam(learning_rate=0.001),
         loss='categorical_crossentropy',
         metrics=['accuracy']
     )
@@ -108,7 +107,7 @@ def build_model(input_shape, output_shape):
 
 # Create and train the model
 model = build_model(len(train_x[0]), len(classes))
-model.fit(train_x, train_y, epochs=200, batch_size=5, verbose=1)
+model.fit(train_x, train_y, epochs=500, batch_size=10, verbose=1)
 
 # Save the trained model
 MODEL_FILE = os.path.join(MODEL_DIR, 'chatbot_model.h5')

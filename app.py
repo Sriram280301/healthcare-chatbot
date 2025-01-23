@@ -119,12 +119,28 @@ def handle_request():
         else:
             return jsonify({"type": "hospital", "error": f"No hospitals found for '{location_keywords}'."}), 404
 
+    elif intent == "health_insurance_info":
+        # Return healthcare schemes
+        results = search_healthcare_schemes()
+        if results:
+            return jsonify({"type": "healthcare_schemes", "results": results})
+        else:
+            return jsonify({"type": "healthcare_schemes", "error": "No healthcare schemes found."}), 404
+
     else:
         response = get_response(intent)
         if response:
             return jsonify({"type": "chatbot", "response": response})
         else:
             return jsonify({"error": "Unable to process the request."}), 500
+
+
+# Function to search healthcare schemes
+def search_healthcare_schemes():
+    with open('health_insurance_schemes.json') as f:
+        schemes_data = json.load(f)
+    return schemes_data.get('health_insurance_schemes', [])
+
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

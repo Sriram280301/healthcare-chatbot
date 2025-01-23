@@ -1,0 +1,31 @@
+{
+        "health_insurance_schemes": [
+{
+
+    "title":"New Health Insurance Scheme (NHIS) for Government Employees and Pensioners",
+    "description":"The Tamil Nadu government offers the NHIS to its employees and pensioners, providing coverage for specified medical treatments in approved hospitals. The scheme is periodically updated to enhance benefits.",
+    "website":"https://www.tn.gov.in/karuvoolam/nhis/nhis2022/nhis2022.htm"
+ },
+ {
+    "title":"Innuyir Kappom - Nammai Kakkum 48",
+    "description":"Launched by the Tamil Nadu government, this scheme provides free emergency care for road accident victims during the first 48 hours post-accident. It covers both residents and non-residents involved in accidents within the state.",
+    "website":"https://en.wikipedia.org/wiki/M._K._Stalin"
+ },
+ {
+    "title":"Private Health Insurance Plans",
+    "description":"Various private insurers offer health insurance plans in Tamil Nadu, including individual, family, senior citizen, critical illness, and super top-up plans. These plans can be tailored to meet specific needs and budgets.",
+    "website":"https://www.tataaig.com/health-insurance/health-insurance-in-tamil-nadu"
+ },
+ {
+    "title":"Employees' State Insurance Scheme (ESIS)",
+    "description":"A central government initiative, ESIS provides medical care and cash benefits to employees earning up to ₹21,000 per month in ESI-covered units. Benefits include medical treatment, sickness and maternity benefits, and dependents' benefits in case of employment-related death or disablement.",
+    "website":"https://en.wikipedia.org/wiki/Employees%27_State_Insurance"
+ },
+ {
+    "title":"Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
+    "description":"A state government scheme offering cashless hospitalization for specific ailments with coverage up to ₹5,00,000 per family per year on a floater basis. It aims to provide quality medical care to vulnerable sections of society.",
+    "website":"https://www.myscheme.gov.in/schemes/cmchis"
+ }
+
+]
+}

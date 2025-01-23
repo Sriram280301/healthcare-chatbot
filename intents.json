@@ -2295,6 +2295,18 @@
           "Searching for hospitals in your location.",
           "Here are the results for your search query."
         ]
+      },
+      {
+        "tag": "health_insurance_info",
+        "patterns": [
+          "Tell me about health insurance schemes",
+          "What health schemes are available?",
+          "List health insurance plans"
+        ],
+        "responses": [
+          "Here is some information about health insurance schemes.",
+          "Let me show you details about health insurance plans."
+        ]
       }
     ]
   }
