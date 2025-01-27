@@ -21,7 +21,7 @@ lemmatizer = WordNetLemmatizer()
 words = pickle.load(open(f'{MODEL_DIR}/words.pkl', 'rb'))
 classes = pickle.load(open(f'{MODEL_DIR}/classes.pkl', 'rb'))
 
-# Load intents, hospital, and blood bank datasets
+# Load intents, hospital, blood bank, and health schemes datasets
 with open('intents.json') as json_file:
     intents = json.load(json_file)
 
@@ -30,6 +30,9 @@ with open('blood_bank.json') as json_file:
 
 with open('hospital.json') as json_file:
     hospital_data = json.load(json_file)["Sheet1"]
+
+with open('health_insurance_schemes.json') as json_file:
+    health_schemes_data = json.load(json_file)["insurance_schemes"]
 
 # Helper functions
 def clean_up_sentence(sentence):
@@ -82,9 +85,7 @@ def search_hospital(query):
     return matches
 
 def search_healthcare_schemes():
-    with open('health_insurance_schemes.json') as f:
-        schemes_data = json.load(f)
-    return schemes_data.get('health_insurance_schemes', [])
+    return health_schemes_data
 
 # API endpoints
 @app.route('/get', methods=['POST'])
@@ -99,26 +100,26 @@ def handle_request():
         location_keywords = message.lower().split("in")[-1].strip() if "in" in message.lower() else message
         results = search_blood_bank(location_keywords)
         if results:
-            return jsonify({"type": "blood_bank", "results": random.sample(results, min(3, len(results)))})
+            return jsonify({"type": "blood_bank", "results": random.sample(results, min(3, len(results)))}), 200
         return jsonify({"type": "blood_bank", "error": f"No blood banks found for '{location_keywords}'."}), 404
 
     elif intent == "hospital_search":
         location_keywords = message.lower().split("in")[-1].strip() if "in" in message.lower() else message
         results = search_hospital(location_keywords)
         if results:
-            return jsonify({"type": "hospital", "results": random.sample(results, min(3, len(results)))})
+            return jsonify({"type": "hospital", "results": random.sample(results, min(3, len(results)))}), 200
         return jsonify({"type": "hospital", "error": f"No hospitals found for '{location_keywords}'."}), 404
 
     elif intent == "health_insurance_info":
         results = search_healthcare_schemes()
         if results:
-            return jsonify({"type": "healthcare_schemes", "results": results})
+            return jsonify({"type": "healthcare_schemes", "results": results}), 200
         return jsonify({"type": "healthcare_schemes", "error": "No healthcare schemes found."}), 404
 
     else:
         response = get_response(intent)
         if response:
-            return jsonify({"type": "chatbot", "response": response})
+            return jsonify({"type": "chatbot", "response": response}), 200
         return jsonify({"error": "Unable to process the request."}), 500
 
 @app.route('/get-voice', methods=['POST'])
@@ -137,7 +138,7 @@ def get_voice():
         with sr.AudioFile(temp_audio_file) as source:
             audio = r.record(source)
             text = r.recognize_google(audio)
-            return jsonify({"transcription": text})
+            return jsonify({"transcription": text}), 200
     except sr.UnknownValueError:
         return jsonify({"error": "Could not understand audio."}), 400
     except sr.RequestError as e:

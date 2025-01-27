@@ -1,31 +1,107 @@
 {
-        "health_insurance_schemes": [
-{
-
-    "title":"New Health Insurance Scheme (NHIS) for Government Employees and Pensioners",
-    "description":"The Tamil Nadu government offers the NHIS to its employees and pensioners, providing coverage for specified medical treatments in approved hospitals. The scheme is periodically updated to enhance benefits.",
-    "website":"https://www.tn.gov.in/karuvoolam/nhis/nhis2022/nhis2022.htm"
- },
- {
-    "title":"Innuyir Kappom - Nammai Kakkum 48",
-    "description":"Launched by the Tamil Nadu government, this scheme provides free emergency care for road accident victims during the first 48 hours post-accident. It covers both residents and non-residents involved in accidents within the state.",
-    "website":"https://en.wikipedia.org/wiki/M._K._Stalin"
- },
- {
-    "title":"Private Health Insurance Plans",
-    "description":"Various private insurers offer health insurance plans in Tamil Nadu, including individual, family, senior citizen, critical illness, and super top-up plans. These plans can be tailored to meet specific needs and budgets.",
-    "website":"https://www.tataaig.com/health-insurance/health-insurance-in-tamil-nadu"
- },
- {
-    "title":"Employees' State Insurance Scheme (ESIS)",
-    "description":"A central government initiative, ESIS provides medical care and cash benefits to employees earning up to ₹21,000 per month in ESI-covered units. Benefits include medical treatment, sickness and maternity benefits, and dependents' benefits in case of employment-related death or disablement.",
-    "website":"https://en.wikipedia.org/wiki/Employees%27_State_Insurance"
- },
- {
-    "title":"Chief Minister's Comprehensive Health Insurance Scheme (CMCHIS)",
-    "description":"A state government scheme offering cashless hospitalization for specific ailments with coverage up to ₹5,00,000 per family per year on a floater basis. It aims to provide quality medical care to vulnerable sections of society.",
-    "website":"https://www.myscheme.gov.in/schemes/cmchis"
- }
-
-]
+   "insurance_schemes": [
+       {
+           "Scheme ID": 1,
+           "Scheme Name": "CMCHIS (Chief Minister’s Scheme)",
+           "Launch Year": 2009,
+           "Eligibility Criteria": "Low-income families below poverty line",
+           "Coverage Amount": "₹5,00,000 annually",
+           "Premium (if any)": "Free",
+           "Implementing Agency": "Government of Tamil Nadu"
+       },
+       {
+           "Scheme ID": 2,
+           "Scheme Name": "Employees State Insurance Scheme",
+           "Launch Year": 1948,
+           "Eligibility Criteria": "Salaried employees (earning ≤ ₹21,000/month)",
+           "Coverage Amount": "Medical + Cash Benefits",
+           "Premium (if any)": "Employer & Employee",
+           "Implementing Agency": "ESIC (Central Govt.)"
+       },
+       {
+           "Scheme ID": 3,
+           "Scheme Name": "Universal Health Insurance Scheme",
+           "Launch Year": 2003,
+           "Eligibility Criteria": "BPL families",
+           "Coverage Amount": "₹30,000/year",
+           "Premium (if any)": "Subsidized",
+           "Implementing Agency": "Public Sector Insurance Cos."
+       },
+       {
+           "Scheme ID": 4,
+           "Scheme Name": "Farmer Insurance Scheme",
+           "Launch Year": 2021,
+           "Eligibility Criteria": "Farmers registered with TN Agri Dept",
+           "Coverage Amount": "₹2,00,000 (Accident)",
+           "Premium (if any)": "Free",
+           "Implementing Agency": "TN Agricultural Dept."
+       },
+       {
+           "Scheme ID": 1,
+           "Age Group": "0-18",
+           "Gender": "Male/Female",
+           "Income Group": "Below ₹72,000/year",
+           "Region": "Rural/Urban",
+           "No. of Beneficiaries": 1200000
+       },
+       {
+           "Scheme ID": 1,
+           "Age Group": "18-45",
+           "Gender": "Female",
+           "Income Group": "Below ₹72,000/year",
+           "Region": "Urban",
+           "No. of Beneficiaries": 800000
+       },
+       {
+           "Scheme ID": 2,
+           "Age Group": "18-60",
+           "Gender": "Male",
+           "Income Group": "₹72,000-₹1,00,000/year",
+           "Region": "Rural",
+           "No. of Beneficiaries": 150000
+       },
+       {
+           "Scheme ID": 3,
+           "Age Group": "0-18",
+           "Gender": "Male/Female",
+           "Income Group": "Below ₹1,20,000/year",
+           "Region": "Urban",
+           "No. of Beneficiaries": 90000
+       },
+       {
+           "Scheme ID": 1,
+           "Treatment Type": "Cardiac Surgeries",
+           "Coverage Amount": "Up to ₹5,00,000",
+           "Hospital Tier": "Tier-1/Tier-2",
+           "Notes": "Includes angioplasty, bypass surgery"
+       },
+       {
+           "Scheme ID": 1,
+           "Treatment Type": "Cancer Treatment",
+           "Coverage Amount": "Up to ₹5,00,000",
+           "Hospital Tier": "Tier-1",
+           "Notes": "Covers chemotherapy and radiation therapy"
+       },
+       {
+           "Scheme ID": 2,
+           "Treatment Type": "Maternity Benefits",
+           "Coverage Amount": "₹10,000",
+           "Hospital Tier": "Tier-2/Tier-3",
+           "Notes": "For salaried employees’ families"
+       },
+       {
+           "Scheme ID": 3,
+           "Treatment Type": "General Illnesses",
+           "Coverage Amount": "Up to ₹30,000/year",
+           "Hospital Tier": "All",
+           "Notes": "Basic outpatient and inpatient coverage"
+       },
+       {
+           "Scheme ID": 4,
+           "Treatment Type": "Accidental Death Cover",
+           "Coverage Amount": "₹2,00,000",
+           "Hospital Tier": "NA",
+           "Notes": "Compensation for farming-related accidental deaths"
+       }
+   ]
 }
