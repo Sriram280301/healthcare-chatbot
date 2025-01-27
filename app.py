@@ -4,6 +4,7 @@ import tensorflow as tf
 import pickle
 import random
 import json
+import re
 from tensorflow.keras.models import load_model
 from nltk.stem import WordNetLemmatizer
 from flask_cors import CORS
@@ -56,33 +57,20 @@ def get_response(tag):
         if intent['tag'] == tag:
             return random.choice(intent['responses'])
 
-def search_blood_bank(query):
+def dynamic_search(data, query, keys):
     query = query.lower().strip()
-    matches = [
-        {
-            "Hospital Name": bank.get("HospitalName", "N/A"),
-            "District": bank.get("DISTRICT", "N/A"),
-            "Address": bank.get("ADDRESS", "N/A"),
-            "Contact No": bank.get("HOSPITAL CONTACT NO", "N/A"),
-        }
-        for bank in blood_bank_data
-        if query in bank.get('DISTRICT', '').lower() or query in bank.get('HospitalName', '').lower()
-    ]
-    return matches
-
-def search_hospital(query):
-    query = query.lower().strip()
-    matches = [
-        {
-            "Hospital Name": hospital.get("HospitalName", "N/A"),
-            "District": hospital.get("DISTRICT", "N/A"),
-            "Address": hospital.get("ADDRESS", "N/A"),
-            "Contact No": hospital.get("HOSPITAL CONTACT NO", "N/A"),
-        }
-        for hospital in hospital_data
-        if query in hospital.get('DISTRICT', '').lower() or query in hospital.get('HospitalName', '').lower()
-    ]
-    return matches
+    results = []
+    for item in data:
+        for key in keys:
+            if query in item.get(key, '').lower():
+                results.append({
+                    "Hospital Name": item.get("HospitalName", "N/A"),
+                    "District": item.get("DISTRICT", "N/A"),
+                    "Address": item.get("ADDRESS", "N/A"),
+                    "Contact No": item.get("HOSPITAL CONTACT NO", "N/A"),
+                })
+                break
+    return results
 
 def search_healthcare_schemes():
     return health_schemes_data
@@ -97,18 +85,20 @@ def handle_request():
     intent = predict_class(message)
 
     if intent == "blood_bank_search":
-        location_keywords = message.lower().split("in")[-1].strip() if "in" in message.lower() else message
-        results = search_blood_bank(location_keywords)
+        location_keywords = re.search(r"in (.+)$", message, re.IGNORECASE)
+        location = location_keywords.group(1).strip() if location_keywords else message
+        results = dynamic_search(blood_bank_data, location, ["DISTRICT", "HospitalName"])
         if results:
             return jsonify({"type": "blood_bank", "results": random.sample(results, min(3, len(results)))}), 200
-        return jsonify({"type": "blood_bank", "error": f"No blood banks found for '{location_keywords}'."}), 404
+        return jsonify({"type": "blood_bank", "error": f"No blood banks found for '{location}'."}), 404
 
     elif intent == "hospital_search":
-        location_keywords = message.lower().split("in")[-1].strip() if "in" in message.lower() else message
-        results = search_hospital(location_keywords)
+        location_keywords = re.search(r"in (.+)$", message, re.IGNORECASE)
+        location = location_keywords.group(1).strip() if location_keywords else message
+        results = dynamic_search(hospital_data, location, ["DISTRICT", "HospitalName"])
         if results:
             return jsonify({"type": "hospital", "results": random.sample(results, min(3, len(results)))}), 200
-        return jsonify({"type": "hospital", "error": f"No hospitals found for '{location_keywords}'."}), 404
+        return jsonify({"type": "hospital", "error": f"No hospitals found for '{location}'."}), 404
 
     elif intent == "health_insurance_info":
         results = search_healthcare_schemes()

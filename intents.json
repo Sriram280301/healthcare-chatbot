@@ -2274,11 +2274,19 @@
           "Are there any blood banks near {address}?",
           "Show me blood banks in {state}",
           "Blood banks in {city}?",
-          "List blood banks in {state}"
+          "List blood banks in {state}",
+          "Any blood banks around {city}?",
+          "Can I get blood banks near {district}?",
+          "Looking for blood banks in {city}",
+          "Is there a blood bank in {state}?",
+          "Blood bank at {address}"
         ],
         "responses": [
-          "Searching blood banks in your location.",
-          "Here are the results for your search query."
+          "Sure, searching for blood banks in your location.",
+          "Here are the nearest blood banks for your query.",
+          "Looking up blood banks in the area for you.",
+          "Let me find some blood banks for '{city}' for you.",
+          "Hold on! I'm fetching blood banks near your location."
         ]
       },
       {
@@ -2289,11 +2297,19 @@
           "Are there any hospitals near {address}?",
           "Show me hospitals in {state}",
           "Hospitals in {city}?",
-          "List hospitals in {state}"
+          "List hospitals in {state}",
+          "Any hospitals around {city}?",
+          "Looking for hospitals near {district}.",
+          "Can you show me hospitals in {state}?",
+          "I need hospitals in {city}",
+          "Hospitals at {address}"
         ],
         "responses": [
-          "Searching for hospitals in your location.",
-          "Here are the results for your search query."
+          "Okay, looking for hospitals in your location.",
+          "Here are the hospitals I found for your search.",
+          "Finding nearby hospitals for you now.",
+          "One moment! Fetching hospital details for '{city}'.",
+          "Searching for hospitals in your area, please wait."
         ]
       },
       {
@@ -2301,11 +2317,21 @@
         "patterns": [
           "Tell me about health insurance schemes",
           "What health schemes are available?",
-          "List health insurance plans"
+          "List health insurance plans",
+          "Are there government health schemes?",
+          "Show me insurance plans for healthcare",
+          "Explain health schemes to me",
+          "What insurance options are available?",
+          "Give me details about health insurance programs",
+          "Health insurance plans, please.",
+          "I need information on healthcare schemes"
         ],
         "responses": [
-          "Here is some information about health insurance schemes.",
-          "Let me show you details about health insurance plans."
+          "Sure, here are some health insurance schemes you can explore.",
+          "Let me share details about health insurance plans for you.",
+          "Here’s the information you requested about health schemes.",
+          "Got it! Fetching available health insurance options.",
+          "I’ll show you the healthcare schemes available now."
         ]
       }
     ]
