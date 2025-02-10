@@ -1,6 +1,45 @@
 {
     "intents": [
       {
+        "tag": "drug_reaction",
+        "patterns": [
+          "What is a drug reaction?",
+          "Tell me about adverse drug reactions.",
+          "What are the side effects of medications?"
+        ],
+        "responses": [
+          "An adverse drug reaction (ADR) is an injury caused by taking medication. ADRs may occur after a single dose, prolonged use, or from combining drugs.",
+          "If you experience unusual symptoms after taking a medication, consult a doctor immediately.",
+          "Some drug reactions are mild, while others can be severe. Always follow dosage instructions and be aware of potential side effects."
+        ]
+      },
+      {
+        "tag": "malaria",
+        "patterns": [
+          "What is malaria?",
+          "Tell me about malaria.",
+          "How is malaria transmitted?"
+        ],
+        "responses": [
+          "Malaria is an infectious disease caused by Plasmodium parasites, transmitted through the bite of infected Anopheles mosquitoes.",
+          "Symptoms of malaria include fever, chills, sweating, and fatigue. It is treatable with antimalarial medications.",
+          "Prevent malaria by using mosquito nets, repellents, and taking preventive medications if traveling to high-risk areas."
+        ]
+      },
+      {
+        "tag": "allergy",
+        "patterns": [
+          "What is an allergy?",
+          "What are common allergy symptoms?",
+          "How do allergies occur?"
+        ],
+        "responses": [
+          "An allergy is an immune system response to a foreign substance like pollen, pet dander, or certain foods, which is usually harmless.",
+          "Common allergy symptoms include sneezing, itching, swelling, and breathing difficulties. Severe reactions can cause anaphylaxis, requiring immediate medical attention.",
+          "Allergies can be managed with antihistamines, avoiding triggers, and consulting a doctor for long-term solutions."
+        ]
+      },
+      {
         "tag": "stop_smoking",
         "patterns": [
           "How do I stop smoking?",
@@ -2279,7 +2318,8 @@
           "Can I get blood banks near {district}?",
           "Looking for blood banks in {city}",
           "Is there a blood bank in {state}?",
-          "Blood bank at {address}"
+          "Blood bank at {address}",
+          "{city} blood bank"
         ],
         "responses": [
           "Sure, searching for blood banks in your location.",

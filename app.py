@@ -1,28 +1,22 @@
-from flask import Flask, request, jsonify
-import numpy as np
-import tensorflow as tf
-import pickle
-import random
+import os
 import json
-import re
-from tensorflow.keras.models import load_model
-from nltk.stem import WordNetLemmatizer
-from flask_cors import CORS
-import speech_recognition as sr
-import pyttsx3
+import random
 import base64
+import re
+import requests
+import speech_recognition as sr
+from flask import Flask, request, jsonify
+from flask_cors import CORS
+
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})  # Restrict CORS for security
 
-# Load the trained model and related data
-MODEL_DIR = 'model'
-model = load_model(f'{MODEL_DIR}/chatbot_model.h5')
-lemmatizer = WordNetLemmatizer()
-words = pickle.load(open(f'{MODEL_DIR}/words.pkl', 'rb'))
-classes = pickle.load(open(f'{MODEL_DIR}/classes.pkl', 'rb'))
+# Load Google Gemini API Key from environment variable
+GEMINI_API_KEY = "AIzaSyDvTUXs9AXShlhtSJLAvLy4PjYEP0Z8saw"
+GEMINI_API_URL = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key={GEMINI_API_KEY}"
 
-# Load intents, hospital, blood bank, and health schemes datasets
+# Load datasets
 with open('intents.json') as json_file:
     intents = json.load(json_file)
 
@@ -35,100 +29,124 @@ with open('hospital.json') as json_file:
 with open('health_insurance_schemes.json') as json_file:
     health_schemes_data = json.load(json_file)["insurance_schemes"]
 
-# Helper functions
-def clean_up_sentence(sentence):
-    sentence_words = tf.keras.preprocessing.text.text_to_word_sequence(sentence)
-    return [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
+# Medical keywords for Gemini AI
+MEDICAL_KEYWORDS = ["doctor", "medicine", "hospital", "disease", "health", "treatment",
+                    "symptoms", "diagnosis", "surgery", "blood", "insurance", "pharmacy", "remedies"]
 
-def bow(sentence):
-    sentence_words = clean_up_sentence(sentence)
-    return np.array([1 if word in sentence_words else 0 for word in words])
+# Location extraction regex patterns
+LOCATION_PATTERNS = [
+    r"\b(?:in|around|near|at|banks in)\s+([\w\s]+)",
+    r"\b([A-Z][a-z]+)\b"
+]
 
-def predict_class(sentence):
-    bow_data = bow(sentence)
-    res = model.predict(np.array([bow_data]))[0]
-    error_threshold = 0.25
-    results = [(i, r) for i, r in enumerate(res) if r > error_threshold]
-    results.sort(key=lambda x: x[1], reverse=True)
-    return classes[results[0][0]] if results else "unknown"
+def extract_location(message):
+    """Extracts a location keyword from a user query."""
+    for pattern in LOCATION_PATTERNS:
+        match = re.search(pattern, message, re.IGNORECASE)
+        if match:
+            return match.group(1).strip()
+    return None
 
-def get_response(tag):
-    for intent in intents['intents']:
-        if intent['tag'] == tag:
-            return random.choice(intent['responses'])
+def is_medical_question(message):
+    """Check if the message contains any medical-related keywords."""
+    return any(keyword in message.lower() for keyword in MEDICAL_KEYWORDS)
 
-def dynamic_search(data, query, keys):
-    query = query.lower().strip()
+def dynamic_search(data, location, search_fields):
+    """Search for matching records in a dataset based on location and fields."""
     results = []
-    for item in data:
-        for key in keys:
-            if query in item.get(key, '').lower():
-                results.append({
-                    "Hospital Name": item.get("HospitalName", "N/A"),
-                    "District": item.get("DISTRICT", "N/A"),
-                    "Address": item.get("ADDRESS", "N/A"),
-                    "Contact No": item.get("HOSPITAL CONTACT NO", "N/A"),
-                })
+    location_lower = location.lower()
+    for entry in data:
+        for field in search_fields:
+            if field in entry and location_lower in entry[field].lower():
+                results.append(entry)
                 break
     return results
 
 def search_healthcare_schemes():
-    return health_schemes_data
+    """Retrieve all healthcare schemes."""
+    return health_schemes_data if health_schemes_data else []
 
-# API endpoints
+def get_gemini_response(message):
+    """Fetch a response from Gemini API for medical-related queries."""
+    if not GEMINI_API_KEY:
+        return "Error: Gemini API key is missing."
+
+    payload = {"contents": [{"parts": [{"text": message}]}]}
+    headers = {"Content-Type": "application/json"}
+
+    try:
+        response = requests.post(GEMINI_API_URL, json=payload, headers=headers, timeout=10)
+        response.raise_for_status()  # Raises error for non-200 responses
+        result = response.json()
+
+        if "candidates" in result and result["candidates"]:
+            full_text = result["candidates"][0].get("content", {}).get("parts", [{}])[0].get("text", "")
+            return full_text.strip() if full_text else "I'm sorry, I couldn't find an answer."
+        return "I'm sorry, I couldn't find an answer."
+
+    except requests.exceptions.RequestException as e:
+        return f"Error communicating with Gemini API: {str(e)}"
+
 @app.route('/get', methods=['POST'])
 def handle_request():
-    message = request.json.get('message', '').strip()
-    if not message:
-        return jsonify({"error": "Message cannot be empty."}), 400
+    """Chatbot API endpoint."""
+    data = request.get_json()
+    if not data or 'message' not in data:
+        return jsonify({"error": "Invalid request. Please provide a message."}), 400
 
-    intent = predict_class(message)
+    message = data['message'].strip()
+    location = extract_location(message)
 
-    if intent == "blood_bank_search":
-        location_keywords = re.search(r"in (.+)$", message, re.IGNORECASE)
-        location = location_keywords.group(1).strip() if location_keywords else message
-        results = dynamic_search(blood_bank_data, location, ["DISTRICT", "HospitalName"])
-        if results:
-            return jsonify({"type": "blood_bank", "results": random.sample(results, min(3, len(results)))}), 200
-        return jsonify({"type": "blood_bank", "error": f"No blood banks found for '{location}'."}), 404
+    # Blood Bank Search
+    if "blood bank" in message.lower():
+        if location:
+            results = dynamic_search(blood_bank_data, location, ["DISTRICT", "STATE", "ADDRESS"])
+            return jsonify({"type": "blood_bank", "location": location, "results": results[:3]}) if results else jsonify({"error": f"No blood banks found in '{location}'."}), 404
+        return jsonify({"error": "Please specify a location (e.g., 'Find blood banks in Mumbai')."}), 400
 
-    elif intent == "hospital_search":
-        location_keywords = re.search(r"in (.+)$", message, re.IGNORECASE)
-        location = location_keywords.group(1).strip() if location_keywords else message
-        results = dynamic_search(hospital_data, location, ["DISTRICT", "HospitalName"])
-        if results:
-            return jsonify({"type": "hospital", "results": random.sample(results, min(3, len(results)))}), 200
-        return jsonify({"type": "hospital", "error": f"No hospitals found for '{location}'."}), 404
+    # Hospital Search
+    if "hospital" in message.lower():
+        if location:
+            results = dynamic_search(hospital_data, location, ["DISTRICT", "STATE", "ADDRESS"])
+            return jsonify({"type": "hospital", "location": location, "results": results[:3]}) if results else jsonify({"error": f"No hospitals found in '{location}'."}), 404
+        return jsonify({"error": "Please specify a location (e.g., 'Hospitals in Bangalore')."}), 400
 
-    elif intent == "health_insurance_info":
+    # Health Insurance Schemes
+    if "health insurance" in message.lower() or "medical scheme" in message.lower():
         results = search_healthcare_schemes()
-        if results:
-            return jsonify({"type": "healthcare_schemes", "results": results}), 200
-        return jsonify({"type": "healthcare_schemes", "error": "No healthcare schemes found."}), 404
+        return jsonify({"type": "healthcare_schemes", "results": results}) if results else jsonify({"error": "No healthcare schemes found."}), 404
 
-    else:
-        response = get_response(intent)
-        if response:
-            return jsonify({"type": "chatbot", "response": response}), 200
-        return jsonify({"error": "Unable to process the request."}), 500
+    # Other medical-related questions (Use Gemini API)
+    if is_medical_question(message):
+        response = get_gemini_response(message)
+        return jsonify({"type": "chatbot", "response": response}), 200
+
+    return jsonify({"response": "Sorry, I couldn't understand that."}), 200
 
 @app.route('/get-voice', methods=['POST'])
 def get_voice():
-    audio_base64 = request.json.get('audio', None)
+    """Speech-to-text API endpoint."""
+    data = request.get_json()
+    audio_base64 = data.get('audio', '')
+
     if not audio_base64:
         return jsonify({"error": "Audio data not provided."}), 400
 
     audio_data = base64.b64decode(audio_base64)
     temp_audio_file = 'temp_audio.wav'
+
     with open(temp_audio_file, 'wb') as audio_file:
         audio_file.write(audio_data)
 
-    r = sr.Recognizer()
+    recognizer = sr.Recognizer()
     try:
         with sr.AudioFile(temp_audio_file) as source:
-            audio = r.record(source)
-            text = r.recognize_google(audio)
-            return jsonify({"transcription": text}), 200
+            audio = recognizer.record(source)
+            text = recognizer.recognize_google(audio)
+
+            # Process the recognized text like a standard request
+            return handle_request().jsonify({"message": text})
+
     except sr.UnknownValueError:
         return jsonify({"error": "Could not understand audio."}), 400
     except sr.RequestError as e:
