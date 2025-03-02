@@ -32,7 +32,7 @@ with open('health_insurance_schemes.json') as f:
 
 
 MEDICAL_KEYWORDS = {
-    "doctor", "medicine", "disease", "health", "treatment",
+    "doctor", "medicine", "disease", "health", "treatment", "tablet", "medication",
     "symptoms", "diagnosis", "surgery", "insurance", "pharmacy",
     "remedies", "fever", "cancer", "infection", "virus", "bacteria",
     "diabetes", "hypertension", "stroke", "heart attack", "cardiology",
@@ -109,7 +109,9 @@ MEDICAL_KEYWORDS = {
     "Osteosarcoma", "Overactive thyroid", "Pancreatic cancer", "Pelvic inflammatory disease",
     "Raynaud’s phenomenon", "Rosacea", "Rheumatoid arthritis", "Respiratory syncytial virus (RSV)",
     "Shortness of breath", "Sickle cell disease", "Testicular cancer", "Trichomonas infection",
-    "Urinary incontinence", "Urticaria (hives)", "Wilms’ tumour", "Womb cancer", "Yellow fever","dysentery","malaria","jaundice","brain tumor","covid-19","blood pressure"
+    "Urinary incontinence", "Urticaria (hives)", "Wilms’ tumour", "Womb cancer", "Yellow fever","dysentery","malaria","jaundice","brain tumor","covid-19","blood pressure",
+    "medicine_name", "generic_name", "brand_name", "dosage", "strength", "formulation", "manufacturer", "composition", "indications", "contraindications", "side_effects", "interactions", "warnings", "precautions", "storage_conditions", "expiry_date", "prescription_required", "over_the_counter", "price", "batch_number", "manufacturing_date", "active_ingredients", "inactive_ingredients", "pharmacokinetics", "mechanism_of_action", "therapeutic_class", "drug_class", "route_of_administration", "absorption", "distribution", "metabolism", "excretion", "half_life", "adverse_reactions", "special_populations", "pregnancy_category", "lactation_category", "pediatric_use", "geriatric_use", "renal_impairment", "hepatic_impairment", "black_box_warning"
+
 }
 
 
